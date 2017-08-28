@@ -1,5 +1,5 @@
 # Mudancas do es5 para o es6
-Principais diferenças da [es5(ECMAScript 5)](http://speakingjs.com/es5/ch25.html) para a [es6(ECMAScript 6)](http://exploringjs.com/es6/)
+Principais diferenças da [es5(ECMAScript 5)](http://www.ecma-international.org/ecma-262/5.1/) para a [es6(ECMAScript 6)](http://www.ecma-international.org/ecma-262/6.0/)
 
 Classes
 =

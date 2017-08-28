@@ -3,7 +3,7 @@ Principais diferenças da [es5(ECMAScript 5)](http://speakingjs.com/es5/ch25.htm
 
 Classes
 =
-Neste exemplo tenho a classe funcionário que herda da classe pessoa e funcionario por padrao o cargo é estagiario com salario zero.
+Neste exemplo declaro a classe funcionário que herda da classe pessoa.
 ### sintaxe no es6
 ```javascript
 'use strict';
@@ -112,7 +112,7 @@ Mudanças
 -
 ##### Declaração de variaveis
 Agora temos 3 tipos de declarações usando:
-1. [var]() = Inicialização opcional pode ser multiplas vezes com o mesmo nome
+1. [var]() = Inicialização opcional, pode ser declarada multiplas vezes com o mesmo nome
 ```javascript
 (()=> {
   console.log(contador); // undefined
@@ -127,7 +127,7 @@ Agora temos 3 tipos de declarações usando:
 })();
 ```
 
-2. [let]() = Inicialização opcional faz parte apenas do bloco onde é declarada, não é hoisted;
+2. [let]() = Inicialização opcional, faz parte apenas do bloco onde é declarada, não é hoisted;
 ```javascript
 (()=> {
   console.log(contador); // ReferenceError: can't access lexical declaration `contador' before initialization
@@ -138,11 +138,11 @@ Agora temos 3 tipos de declarações usando:
       console.log(i); // 0
     }, 100);
   } 
-  console.log(i);	// ReferenceError: i não está definido
+  console.log(i); // ReferenceError: i não está definido
 })();
 ```
 
-3. [const]() = Variavel apenas para leitura e não pode declarar uma função ou variável com o mesmo nome no mesmo escopo tambem não é hoisted
+3. [const]() = Variavel apenas para leitura, não pode declarar uma função ou variável com o mesmo nome no mesmo escopo tambem não é hoisted
 ```javascript
 (()=> {
   console.log(contador); // ReferenceError: can't access lexical declaration `contador' 

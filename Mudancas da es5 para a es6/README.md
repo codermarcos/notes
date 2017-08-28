@@ -112,7 +112,6 @@ Mudanças
 -
 ##### Declaração de variaveis
 Agora temos 3 tipos de declarações usando:
-
 1. [var]() = Inicialização opcional pode ser multiplas vezes com o mesmo nome
 ```javascript
 (()=> {
@@ -129,7 +128,6 @@ Agora temos 3 tipos de declarações usando:
 ```
 
 2. [let]() = Inicialização opcional faz parte apenas do bloco onde é declarada, não é hoisted;
-
 ```javascript
 (()=> {
 	console.log(contador); // ReferenceError: can't access lexical declaration `contador' before initialization
@@ -145,7 +143,6 @@ Agora temos 3 tipos de declarações usando:
 ```
 
 3. [const]() = Variavel apenas para leitura e não pode declarar uma função ou variável com o mesmo nome no mesmo escopo tambem não é hoisted
-
 ```javascript
 (()=> {
 	console.log(contador); // ReferenceError: can't access lexical declaration `contador' 

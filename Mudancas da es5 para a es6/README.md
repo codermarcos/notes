@@ -211,7 +211,9 @@ Temos dois novos metodos de busca que ajudaram a melhorar a sintax
 2. [findIndex](http://www.ecma-international.org/ecma-262/6.0/#sec-array.prototype.findindex) = Verifica se a string inicia ou contem o parametro passado em apartir de determinada posicao
 ```javascript
 // es5
-[ {id: 2}, {id: 10}, {id: 7} ].filter(x =>  x.id === 10)[0]; // Object { id: 10 }
+var index = -1;
+[ {id: 2}, {id: 10}, {id: 7} ].forEach((element, i) => { if(element.id === 10) index = i; });
+console.log(index); // 1
 
 // es6
 [ {id: 2}, {id: 10}, {id: 7} ].findIndex(x =>  x.id === 10); // 1

@@ -112,7 +112,7 @@ Mudanças
 -
 ##### Declaração de variaveis
 Agora temos 3 tipos de declarações usando:
-1. [var]() = Inicialização opcional, pode ser declarada multiplas vezes com o mesmo nome
+1. [var](http://www.ecma-international.org/ecma-262/6.0/#sec-variable-statement) = Inicialização opcional, pode ser declarada multiplas vezes com o mesmo nome
 ```javascript
 (()=> {
   console.log(contador); // undefined
@@ -127,7 +127,7 @@ Agora temos 3 tipos de declarações usando:
 })();
 ```
 
-2. [let]() = Inicialização opcional, faz parte apenas do bloco onde é declarada, não é hoisted;
+2. [let](http://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations) = Inicialização opcional, faz parte apenas do bloco onde é declarada, não é hoisted;
 ```javascript
 (()=> {
   console.log(contador); // ReferenceError: can't access lexical declaration `contador' before initialization
@@ -142,7 +142,7 @@ Agora temos 3 tipos de declarações usando:
 })();
 ```
 
-3. [const]() = Variavel apenas para leitura, não pode declarar uma função ou variável com o mesmo nome no mesmo escopo tambem não é hoisted
+3. [const](http://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations) = Variavel apenas para leitura, não pode declarar uma função ou variável com o mesmo nome no mesmo escopo tambem não é hoisted
 ```javascript
 (()=> {
   console.log(contador); // ReferenceError: can't access lexical declaration `contador' 
@@ -156,5 +156,63 @@ Agora temos 3 tipos de declarações usando:
   console.log(i);  
 })();
 ```
+##### Strings
 
+Na classe string temos 4 novos metodos que podem melhorar a sintax são eles:
+1. [repeat](http://www.ecma-international.org/ecma-262/6.0/#sec-string.prototype.repeat) = Para repetir a string n vezes.
+```javascript
+// es5
+Array(4).join('abc'); // abcabcabc
 
+// es6
+'abc'.repeat(3); // abcabcabc
+```
+
+2. [startsWith](http://www.ecma-international.org/ecma-262/6.0/#sec-string.prototype.startswith) = Verifica se a string inicia ou contem o parametro passado em apartir de determinada posicao
+```javascript
+// es5
+'abcdef'.indexOf('abc') === 0; // true 
+
+// es6
+'abcdef'.startsWith('abc') // true 
+'abcdef'.startsWith('bcd', 1) // true 
+```
+
+3. [endsWith](http://www.ecma-international.org/ecma-262/6.0/#sec-string.prototype.endswith) = Verifica se a string inicia ou contem o parametro passado em apartir de determinada posicao
+```javascript
+// es5
+'abcdef'.indexOf('cde') === (5 - 'cde'.length); // true 
+
+// es6
+'abcdef'.endsWith('def') // true 
+'abcdef'.endsWith('cde', 5) // true 
+```
+
+4. [includes](http://www.ecma-international.org/ecma-262/6.0/#sec-string.prototype.includes) = Verifica se a string contem o parametro passado em determinada posicao
+```javascript
+// es5
+'abcdef'.indexOf('cde') !== -1; // true 
+
+// es6
+'abcdef'.includes('def') // true 
+'abcdef'.includes('cde', 2) // true 
+```
+##### Arrays
+Temos dois novos metodos de busca que ajudaram a melhorar a sintax
+1. [find](http://www.ecma-international.org/ecma-262/6.0/#sec-array.prototype.find) = Para repetir a string n vezes.
+```javascript
+// es5
+[ {id: 2}, {id: 10}, {id: 7} ].filter(x =>  x.id === 10)[0]; // Object { id: 10 }
+
+// es6
+[ {id: 2}, {id: 10}, {id: 7} ].find(x =>  x.id === 10); // Object { id: 10 }
+```
+
+2. [findIndex](http://www.ecma-international.org/ecma-262/6.0/#sec-array.prototype.findindex) = Verifica se a string inicia ou contem o parametro passado em apartir de determinada posicao
+```javascript
+// es5
+[ {id: 2}, {id: 10}, {id: 7} ].filter(x =>  x.id === 10)[0]; // Object { id: 10 }
+
+// es6
+[ {id: 2}, {id: 10}, {id: 7} ].findIndex(x =>  x.id === 10); // 1
+```

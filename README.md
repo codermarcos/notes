@@ -1,2 +1,3 @@
-# javascript-weekly
-Weekly learning javascript
+# Javascript weekly
+Aprendizado semanal sobre javascript e boas praticas.
+

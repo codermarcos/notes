@@ -1,7 +1,8 @@
-# Mudancas do es5 para o es6
-Principais diferenças da [es5(ECMAScript 5.1)](http://www.ecma-international.org/ecma-262/5.1/) para a [es6(ECMAScript 6)](http://www.ecma-international.org/ecma-262/6.0/)
+# Mudancas da es5 para a es6
+Como tivemos muitas mudanças da [es5(ECMAScript 5.1)](http://www.ecma-international.org/ecma-262/5.1/) para a [es6(ECMAScript 6)](http://www.ecma-international.org/ecma-262/6.0/) resolvi separar em diferentes arquivos abaixo você encontra sobre oque se trata cada um:
 
-Classes
+[Classes](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-es6/classes)
+
 =
 Neste exemplo declaro a classe funcionário que herda da classe pessoa.
 ### sintaxe no es6

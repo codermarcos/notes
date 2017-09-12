@@ -3,6 +3,6 @@ Como ocorreu muitas mudanças da [es5(ECMAScript 5.1)](http://www.ecma-internati
 
 - [Array](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-es6/array)
 - [Classes](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-es6/classes)
-- [String](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-es6/string)
+- [Strings](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-es6/strings)
 - [Variaveis](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-es6/variaveis)
 - [Spread](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-es6/spread)

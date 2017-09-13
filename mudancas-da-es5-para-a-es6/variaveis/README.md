@@ -12,10 +12,10 @@ Agora temos 3 tipos de declarações usando:
   for(var i = 0; i < 1; i++){
     var contador = i;
     setTimeout(() => {
-      console.log(i); // 1
+      console.log(i);   // 1
     }, 100);
   } 
-  console.log(i); // 1
+  console.log(i);       // 1
 })();
 ```
 
@@ -27,10 +27,10 @@ Agora temos 3 tipos de declarações usando:
   for(let i = 0; i < 1; i++){
     let contador = i;		
     setTimeout(() => {
-      console.log(i); // 0
+      console.log(i);   // 0
     }, 100);
   } 
-  console.log(i); // ReferenceError: i não está definido
+  console.log(i);       // ReferenceError: i não está definido
 })();
 ```
 
@@ -40,9 +40,9 @@ Agora temos 3 tipos de declarações usando:
   console.log(contador); // ReferenceError: can't access lexical declaration `contador' 
   const contador = 0;
   for(var i = 0; i < 1; i++){
-    var contador = i; // SyntaxError: redeclaration of const contador
+    var contador = i;   // SyntaxError: redeclaration of const contador
     setTimeout(() => {
-      console.log(i); // 1
+      console.log(i);   // 1
     }, 100);
   } 
   console.log(i);  

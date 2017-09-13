@@ -1,5 +1,5 @@
 # Novidades da es7
-Novidades da [es7(ECMAScript 7)](http://www.ecma-international.org/ecma-262/7.0/) se ainda não sabe todas de novo que veio com a grande implementação da [es6(ECMAScript 6)](http://www.ecma-international.org/ecma-262/6.0/) pode entender melhor lendo [Mudanças da es5 para a es6](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-es6)
+Novidades da [es7(ECMAScript 7)](http://www.ecma-international.org/ecma-262/7.0/) veja tambem oque ja foi implementado na grande implementação da [es6(ECMAScript 6)](http://www.ecma-international.org/ecma-262/6.0/) lendo [Mudanças da es5 para a es6](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-es6)
 
 ### Spread para objetos
 =
@@ -17,26 +17,10 @@ console.log(cabeca); // head
 console.log(bracos); // arms
 console.log(pernas); // Object { pernas: 'legs', joelho: 'knee', pe: 'foot' }
 ```
-
-### Async/Await 
+### Pow
 =
-Uma funcão async espara o retorno das promises para continuar sua execução
-> Você pode entender um pouco melhor sobre Async/Await em [Promises com AsyncAwait](https://github.com/codermarcos/javascript-weekly/tree/master/promises-com-async-await)
-
+Realizar potencializaçao
 ```javascript
-let request = new Promise((res, rej) => { setTimeout(() => { res('request completo') },1000) });
-
-// es6
-(() => {
-  let logger;
-  request.then((done)=> logger = done);
-  console.log(logger); // undefined
-})();
-
-// es7
-(async () => {
-  let logger;
-  await request.then((done)=> logger = done);
-  console.log(logger); // request completo
-})();
+Math.pow(2, 2);  // 4
+Math.pow(2, 4);  // 16
 ```

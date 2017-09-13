@@ -10,7 +10,7 @@ Não realize os testes em site com SSL você tera problemas de Content Security 
 
 Exemplos
 -
-##### Apesar de async/await ter chegado apenas na [es7 (ECMAScript 7)](https://www.ecma-international.org/ecma-262/7.0/), os exemplos abaixo estão usando usando sintax incluida na [es6 (ECMAScript 6)](http://www.ecma-international.org/ecma-262/6.0/) se ainda não conhece recomendo :muscle: fortemente que leia [As diferenças da es5 para a es6](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-e6)
+##### Apesar de async/await ter chegado apenas na [es8 (ECMAScript 8)](https://www.ecma-international.org/ecma-262/), grande parte dos exemplos abaixo estão usando sintax incluida na [es6 (ECMAScript 6)](http://www.ecma-international.org/ecma-262/6.0/) se ainda não viu as implementações recomendo :muscle: fortemente que leia [As diferenças da es5 para a es6](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-e6)
 #####
 
 ##### Promises

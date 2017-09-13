@@ -18,7 +18,6 @@ console.log(bracos); // arms
 console.log(pernas); // Object { pernas: 'legs', joelho: 'knee', pe: 'foot' }
 ```
 ### Pow
-=
 Realizar potencializaçao
 ```javascript
 Math.pow(2, 2);  // 4

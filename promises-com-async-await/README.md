@@ -111,6 +111,3 @@ Exemplos
   
 })();
 ```
-
-## Conclusão
--

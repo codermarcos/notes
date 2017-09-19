@@ -34,17 +34,16 @@ console.log( Object.is( null, undefined ) ) // true
 ### Operadores lógicos
 - [&&]()
 ```javascript
-console.log( '' && 'com valor 1' ); //
-console.log( 'valor 0' && 'com valor 1' ); // 'valor 1'
-console.log( 'valor 0' && 'com valor 1' ); // 'valor 1'
+console.log( '' && 'valor 1' ); //
+console.log( 'valor 0' && 'valor 1' ); // 'valor 1'
 
 console.log( 0 && 5 ); // 0
 console.log( 5 && 5 ); // 5
 ```
 - [||]()
 ```javascript
-console.log( 'com valor 1' || '' ); // valor 1
-console.log( 'valor 0' || 'com valor 1' ); // 'valor 1'
+console.log( 'valor 1' || '' ); // valor 1
+console.log( 'valor 0' || 'valor 1' ); // 'valor 0'
 
 console.log( 0 || 5 ); // 5
 console.log( 5 || 5 ); // 5

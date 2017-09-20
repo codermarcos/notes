@@ -32,7 +32,8 @@ console.log( Object.is( NaN, NaN ) ) // true
 console.log( Object.is( null, undefined ) ) // true
 ```
 ### Operadores lógicos
-- [&&]()
+- [&&]() Sempre que houver valor falso retorna falso ou seja os dois devem apresentar valor
+> se ambos forem verdadeiros por padrão é retornado o ultimo
 ```javascript
 console.log( '' && 'valor 1' ); //
 console.log( 'valor 0' && 'valor 1' ); // 'valor 1'
@@ -40,7 +41,8 @@ console.log( 'valor 0' && 'valor 1' ); // 'valor 1'
 console.log( 0 && 5 ); // 0
 console.log( 5 && 5 ); // 5
 ```
-- [||]()
+- [||]() Se algum dos dois for verdadeiro retorna verdadeiro ou seja sempre retornara oque tiver valor
+> sempre retornara a primeira sentença verdadeira
 ```javascript
 console.log( 'valor 1' || '' ); // valor 1
 console.log( 'valor 0' || 'valor 1' ); // 'valor 0'

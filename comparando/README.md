@@ -1,9 +1,9 @@
 # Comparando
 Diferentes formas de comparar e montar um if mais legivel.
-- [===]() Compara os valores em seu estado original levando em consideração seu tipo.
-- [==]() Compara os valores convertendo para um tipo comum e realiza a comparacão ===
+- [===](http://www.ecma-international.org/ecma-262/6.0/#sec-strict-equality-comparison) Compara os valores em seu estado original levando em consideração seu tipo.
+- [==](http://www.ecma-international.org/ecma-262/6.0/#sec-abstract-equality-comparison) Compara os valores convertendo para um tipo comum e realiza a comparacão ===
 
-- [Object.is]() Incluido no es6 você pode ver outras inclusões em [Mudanças da es5 para a es6](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-es6). Muito parecido com === sua direfença é no caso de NaN e Zeros  
+- [Object.is](http://www.ecma-international.org/ecma-262/6.0/#sec-object.is) Incluido no es6 você pode ver outras inclusões em [Mudanças da es5 para a es6](https://github.com/codermarcos/javascript-weekly/tree/master/mudancas-da-es5-para-a-es6). Muito parecido com === sua direfença é no caso de NaN e Zeros  
 
 ```javascript
 // usando ===
@@ -32,7 +32,7 @@ console.log( Object.is( NaN, NaN ) ) // true
 console.log( Object.is( null, undefined ) ) // true
 ```
 ### Operadores lógicos
-- [&&]() Sempre que houver valor falso retorna falso ou seja os dois devem apresentar valor
+- [&&](http://www.ecma-international.org/ecma-262/6.0/#sec-binary-logical-operators) Sempre que houver valor falso retorna falso ou seja os dois devem apresentar valor
 > se ambos forem verdadeiros por padrão é retornado o ultimo
 ```javascript
 console.log( '' && 'valor 1' ); //
@@ -41,7 +41,7 @@ console.log( 'valor 0' && 'valor 1' ); // 'valor 1'
 console.log( 0 && 5 ); // 0
 console.log( 5 && 5 ); // 5
 ```
-- [||]() Se algum dos dois for verdadeiro retorna verdadeiro ou seja sempre retornara oque tiver valor
+- [||](http://www.ecma-international.org/ecma-262/6.0/#sec-binary-logical-operators) Se algum dos dois for verdadeiro retorna verdadeiro ou seja sempre retornara oque tiver valor
 > sempre retornara a primeira sentença verdadeira
 ```javascript
 console.log( 'valor 1' || '' ); // valor 1

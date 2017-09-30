@@ -1,6 +1,7 @@
 # Javascript weekly
 Aprendizado semanal sobre javascript e boas praticas.
 
+- [Acessando Midias](https://github.com/codermarcos/javascript-weekly/tree/master/acessando-midias)
 - [Comparando](https://github.com/codermarcos/javascript-weekly/tree/master/comparando)
 - [Promises com Async/Await](https://github.com/codermarcos/javascript-weekly/tree/master/promises-com-async-await)
 - [Novidades da es8](https://github.com/codermarcos/javascript-weekly/tree/master/novidades-da-es8)

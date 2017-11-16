@@ -3,7 +3,7 @@ Diferentes formas de comparar e montar um if mais legivel.
 - [===](http://www.ecma-international.org/ecma-262/6.0/#sec-strict-equality-comparison) Compara os valores em seu estado original levando em consideração seu tipo.
 - [==](http://www.ecma-international.org/ecma-262/6.0/#sec-abstract-equality-comparison) Compara os valores convertendo para um tipo comum e realiza a comparacão ===
 
-- [Object.is](http://www.ecma-international.org/ecma-262/6.0/#sec-object.is) Incluido no es6 você pode ver outras inclusões em [Mudanças da es5 para a es6](https://github.com/codermarcos/frontend-weekly/tree/master/mudancas-da-es5-para-a-es6). Muito parecido com === sua direfença é no caso de NaN e Zeros  
+- [Object.is](http://www.ecma-international.org/ecma-262/6.0/#sec-object.is) Incluido no es6 você pode ver outras inclusões em [Mudanças da es5 para a es6](https://github.com/codermarcos/javascript/frontend-weekly/tree/master/mudancas-da-es5-para-a-es6). Muito parecido com === sua direfença é no caso de NaN e Zeros  
 
 ```javascript
 // usando ===

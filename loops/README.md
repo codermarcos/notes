@@ -2,7 +2,8 @@
 Alguns laços de repetição e seus funcionamentos.
 
 
-- [for]() Loop default de contandor 
+- [for]() Loop default de contandor
+> for é o loop mais flexisivel e performatico quando comparado com os seguintes
 ```javascript
 const letras = ['a', 'b'];
 

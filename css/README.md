@@ -3,7 +3,7 @@ Aprendizado semanal sobre temas de frontend e boas praticas.
 
 ### Last 
 
-- [Loops](https://github.com/codermarcos/javascript/frontend-weekly/tree/master/xmlhttprequest)
+- [Loops](https://github.com/codermarcos/javascript/frontend-weekly/tree/master/loops)
 
 ## Javascript
 

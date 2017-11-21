@@ -1,5 +1,5 @@
 # Novidades da es8
-Novidades da [es8(ECMAScript 8)](http://www.ecma-international.org/ecma-262/) para acompanhar as outras implementações você tambem pode ler [Novidades da es7 (EcmaScript 7)](https://github.com/codermarcos/javascript/frontend-weekly/tree/master/novidades-da-es7) e tambem [Mudancas da es5 para a es6](https://github.com/codermarcos/javascript/frontend-weekly/tree/master/mudancas-da-es5-para-a-es6)
+Novidades da [es8(ECMAScript 8)](http://www.ecma-international.org/ecma-262/) para acompanhar as outras implementações você tambem pode ler [Novidades da es7 (EcmaScript 7)](https://github.com/codermarcos/frontend-weekly/tree/master/javascript/novidades-da-es7) e tambem [Mudancas da es5 para a es6](https://github.com/codermarcos/frontend-weekly/tree/master/javascript/mudancas-da-es5-para-a-es6)
 
 Strings
 =
@@ -39,7 +39,7 @@ Object.entries(pessoa); // Array [ ["nome", "Marcos"], ["idade", 19], ["profisao
 Async/Await 
 =
 Uma funcão async espara o retorno das promises para continuar sua execução
-> Você pode entender um pouco melhor sobre Async/Await em [Promises com AsyncAwait](https://github.com/codermarcos/javascript-weekly/tree/master/promises-com-async-await)
+> Você pode entender um pouco melhor sobre Async/Await em [Promises com AsyncAwait](https://github.com/codermarcos/frontend-weekly/tree/master/javascript/promises-com-async-await)
 
 ```javascript
 const request = new Promise((res, rej) => { setTimeout(() => { res('request completo') },1000) });

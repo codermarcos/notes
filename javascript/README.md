@@ -3,11 +3,14 @@ Aprendizado semanal sobre temas de frontend e boas praticas.
 
 ### Last 
 
+
+- [Symbol](symbol)
 - [XMLHttpRequest](xmlhttprequest)
 - [Loops](loops)
 
 ## Javascript
 
+- [Symbol](symbol)
 - [XMLHttpRequest](xml-http-request)
 - [Loops](loops)
 - [Acessando Midias](acessando-midias)

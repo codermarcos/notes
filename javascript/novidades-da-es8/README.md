@@ -1,5 +1,5 @@
 # Novidades da es8
-Novidades da [es8(ECMAScript 8)](http://www.ecma-international.org/ecma-262/) para acompanhar as outras implementações você tambem pode ler [Novidades da es7 (EcmaScript 7)](https://github.com/codermarcos/frontend-weekly/tree/master/javascript/novidades-da-es7) e tambem [Mudancas da es5 para a es6](https://github.com/codermarcos/frontend-weekly/tree/master/javascript/mudancas-da-es5-para-a-es6)
+Novidades da [es8(ECMAScript 8)](http://www.ecma-international.org/ecma-262/) para acompanhar as outras implementações você tambem pode ler [Novidades da es7 (EcmaScript 7)](/novidades-da-es7) e tambem [Mudancas da es5 para a es6](/mudancas-da-es5-para-a-es6)
 
 Strings
 =

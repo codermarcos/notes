@@ -3,10 +3,12 @@ Aprendizado semanal sobre temas de frontend e boas praticas.
 
 ### Last 
 
-- [Loops](https://github.com/codermarcos/javascript/frontend-weekly/tree/master/xmlhttprequest)
+- [XMLHttpRequest](https://github.com/codermarcos/javascript/frontend-weekly/tree/master/xmlhttprequest)
+- [Loops](https://github.com/codermarcos/javascript/frontend-weekly/tree/master/loops)
 
 ## Javascript
 
+- [XMLHttpRequest](https://github.com/codermarcos/frontend-weekly/tree/master/javascript/xml-http-request)
 - [Loops](https://github.com/codermarcos/javascript/frontend-weekly/tree/master/loops)
 - [Acessando Midias](https://github.com/codermarcos/javascript/frontend-weekly/tree/master/acessando-midias)
 - [Comparando](https://github.com/codermarcos/javascript/frontend-weekly/tree/master/comparando)

@@ -6,7 +6,7 @@ XMLHttpRequest
 **Oque é** o XHR segundo á [mdn](https://developer.mozilla.org/pt-BR/docs/Web/API/XMLHttpRequest) é uma API que fornece funcionalidade ao cliente para transferir dados entre um cliente e um servidor.
 
 ### Uso basico
-#### Json
+Exemplo de uso com **json**
 ```javascript
   let xhr = new XMLHttpRequest(); // Instancia o xhr 
 
@@ -26,8 +26,7 @@ XMLHttpRequest
 
   xhr.send(json);  // Enviar com os parametros do request
 ```
-
-#### Form
+Exemplo de uso com **form**
 ```javascript
   let xhr = new XMLHttpRequest(); // Instancia o xhr
   let form  = new FormData(); // Instancia do Form para adicionar seus campos
@@ -52,8 +51,7 @@ XMLHttpRequest
 ```
 
 ### State 
-[readyState](https://xhr.spec.whatwg.org/#dom-xmlhttprequest-readystate) é um atributo do objeto xhr que contem o atual estado do xhr que pode ser 0, 1, 2, 3, 4
-[states](https://xhr.spec.whatwg.org/#states)
+[states](https://xhr.spec.whatwg.org/#states) é oque identifica o estado atual do xhr que pode ser 0, 1, 2, 3, 4
 ```
 0 = UNSENT, Foi instanciado mas ainda não foi iniciado. O metodo open() não foi chamado;
 1 = OPENED, Apos a chamada do metodo open();
@@ -61,6 +59,8 @@ XMLHttpRequest
 3 = LOADING, Recebeu ou esta recebendo o response
 4 = DONE, O Request finalizou
 ``` 
+[readyState](https://xhr.spec.whatwg.org/#dom-xmlhttprequest-readystate) é um atributo do objeto xhr que contem o state atual do xhr 
+
 [onreadystatechange](https://xhr.spec.whatwg.org/#event-xhr-readystatechange) Metodo usado para acompanhar o status do request
 ```javascript
   xhr.onreadystatechange = () => { 

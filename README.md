@@ -4,7 +4,7 @@ Aprendizado semanal sobre temas de frontend e boas praticas.
 ### Lasts
 
 - [currentColor](https://github.com/codermarcos/frontend-weekly/tree/master/css/current-color)
-- [XMLHttpRequest](https://github.com/codermarcos/frontend-weekly/tree/master/javascript/xml-http-request)
+- [Symbol](https://github.com/codermarcos/javascript/frontend-weekly/tree/master/symbol)
 
 ## Javascript
 

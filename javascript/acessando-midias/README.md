@@ -3,6 +3,7 @@ Acessar as dispositivos de midia input e output.
 
 Primeiro monte uma verificação para ver se o browser suporta esta função. 
 ```javascript
+// Verificando se o navegador contem o atributo mediaDevices e getUserMedia
 if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
 // Seu codigo deve vir aqui ...    
 } else {
@@ -10,7 +11,7 @@ if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
 }
 ```
 
-- [enumerateDevices]() Retorna um array com informações de todas as dispositivos de input e output disponiveis para o browser.
+- [enumerateDevices](https://w3c.github.io/mediacapture-main/#dom-mediadevices-enumeratedevices()) Retorna um array com informações de todas as dispositivos de input e output disponiveis para o browser.
 ```javascript
     navigator.mediaDevices.enumerateDevices()
         .then(devices => console.log(devices)); // [...] MediaDeviceInfo
@@ -22,7 +23,7 @@ if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
                                                 //      }
 ```
 
-- [getUserMidia]() Solicita permissão para acessar dispositivos, passando como parametro as midias e suas configurações, retornara stream.
+- [getUserMidia](https://www.w3.org/TR/screen-capture/#idl-def-NavigatorUserMedia) Solicita permissão para acessar dispositivos, passando como parametro as midias e suas configurações, retornara stream.
 ```javascript
     const params = {
         audio: true, // acessar audio

@@ -58,6 +58,7 @@ console.log(b); // Object { Symbol(chave): 1, Symbol(chave): 2 }
 ```
 
 - [for](http://www.ecma-international.org/ecma-262/6.0/#sec-symbol.for) O **symbol.for** busca um symbol da chave recebida se encontrado ele traz a referencia da mesma, se não ele cria um novo symbol
+
 ```javascript
 var key = 'chave';
 var symbol = Symbol.for(key);
@@ -66,6 +67,7 @@ console.log( Symbol.for(key) === symbol ); // true
 ```
 
 - [keyFor](http://www.ecma-international.org/ecma-262/6.0/#sec-symbol.keyfor)  O **symbol.keyFor** retorna a key do symbol passado como parametro.
+
 ```javascript
 var b = {};
 

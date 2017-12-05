@@ -12,7 +12,7 @@ var symbol = Symbol('foo');
 ```
 
 ### É realmente unico ?
-Veja voçê mesmo 
+Veja você mesmo 
 ```javascript
 var key = 'descricao';
 

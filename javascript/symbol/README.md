@@ -28,7 +28,9 @@ Legal não é mesmo ?
 
 #### Oque ha de bom ?
 Por gerar um tipo unico mesmo com valores iguais ajuda a evitar conflitos em objetos exemplo:
-- Exemplo com key simples de string
+
+Exemplo com key simples de string
+
 ```javascript
 var a = {};
 
@@ -39,7 +41,9 @@ a[key] = 2;
 
 console.log(a); // Object { chave: 2 }
 ```
-- Exemplo com Symbol
+
+Exemplo com Symbol
+
 ```javascript
 var b = {};
 

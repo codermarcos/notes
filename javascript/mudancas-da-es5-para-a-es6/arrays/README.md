@@ -7,6 +7,7 @@ Arrays
 =
 Temos dois novos metodos de busca que ajudaram a melhorar a sintax
 1. [find](http://www.ecma-international.org/ecma-262/6.0/#sec-array.prototype.find) = Semelhante ao filter mas retorna um unico objeto.
+
 ```javascript
 // es5
 [ {id: 2}, {id: 10}, {id: 7} ].filter(x =>  x.id === 10)[0]; // Object { id: 10 }
@@ -15,7 +16,8 @@ Temos dois novos metodos de busca que ajudaram a melhorar a sintax
 [ {id: 2}, {id: 10}, {id: 7} ].find(x =>  x.id === 10);      // Object { id: 10 }
 ```
 
-2. [findIndex](http://www.ecma-international.org/ecma-262/6.0/#sec-array.prototype.findindex) = Retorna o index do primeiro objeto encontrado no filter 
+2. [findIndex](http://www.ecma-international.org/ecma-262/6.0/#sec-array.prototype.findindex) = Retorna o index do primeiro objeto encontrado no filter.
+
 ```javascript
 // es5
 var index = -1;

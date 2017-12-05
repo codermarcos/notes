@@ -4,7 +4,9 @@ Novidades da [es7(ECMAScript 7)](http://www.ecma-international.org/ecma-262/7.0/
 ### Spread para objetos
 =
 O operador spread que era usado no es6 para array agora pode ser usado para objetos
+
 > se não ainda não tinha visto o spread em array recomendo fortemente que leia [Spread](/mudancas-da-es5-para-a-es6/spread)
+
 ```javascript
 // es6 
 let {bracos, pernas} = {bracos: 'arms', pernas: 'legs', joelho: 'knee', pe: 'foot'};
@@ -17,8 +19,11 @@ console.log(cabeca); // head
 console.log(bracos); // arms
 console.log(pernas); // Object { pernas: 'legs', joelho: 'knee', pe: 'foot' }
 ```
+
 ### Pow
+
 Realizar potencializaçao
+
 ```javascript
 Math.pow(2, 2);  // 4
 Math.pow(2, 4);  // 16

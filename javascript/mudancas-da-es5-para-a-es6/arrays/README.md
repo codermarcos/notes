@@ -1,11 +1,12 @@
 
 # Mudancas da es5 para a es6
 
-Mostrarei as mudanças da [es5(ECMAScript 5.1)](http://www.ecma-international.org/ecma-262/5.1/) para a [es6(ECMAScript 6)](http://www.ecma-international.org/ecma-262/6.0/) de forma mais clara possivel, como ocorreu muitas mudaças, separei em diferentes arquivos você encontra-los em [Mudancas da es5 para a es6](/mudancas-da-es5-para-a-es6/).
+Mostrarei as mudanças da [es5(ECMAScript 5.1)](http://www.ecma-international.org/ecma-262/5.1/) para a [es6(ECMAScript 6)](http://www.ecma-international.org/ecma-262/6.0/) de forma mais clara possivel, como ocorreu muitas mudaças, separei em diferentes arquivos você encontra-los em [Mudancas da es5 para a es6](/javascript/mudancas-da-es5-para-a-es6/).
 
 Arrays
 =
 Temos dois novos metodos de busca que ajudaram a melhorar a sintax
+
 1. [find](http://www.ecma-international.org/ecma-262/6.0/#sec-array.prototype.find) = Semelhante ao filter mas retorna um unico objeto.
 
 ```javascript

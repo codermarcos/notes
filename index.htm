@@ -56,14 +56,29 @@
                     <h3 class="posts__head__title">Javascript</h3>
                 </a>
                 <div id="javascript" class="posts__container">
-                    <!-- <a class="posts__link" href="/javascript/xml-http-request" title="Conhecendo o xhr">XMLHttpRequest</a>
-                    <a class="posts__link" href="/javascript/loops" title="Alguns loops do javascript">Loops</a>
-                    <a class="posts__link" href="/javascript/acessando-midias" title="Uma das formas de acessar as midias do dispositivo">Acessando Midias</a>
-                    <a class="posts__link" href="/javascript/comparando" title="Comparando no javascript">Comparando</a>
-                    <a class="posts__link" href="/javascript/promises-com-async-await" title="Usando async await">Promises com Async/Await</a>
-                    <a class="posts__link" href="/javascript/novidades-da-es8" title="Novidades do ECMAScript 8">Novidades da es8</a>
-                    <a class="posts__link" href="/javascript/novidades-da-es7" title="Novidades do ECMAScript 7">Novidades da es7</a>
-                    <a class="posts__link" href="/javascript/mudancas-da-es5-para-a-es6" title="Novidades do ECMAScript 6">Mudancas da es5 para a es6</a> -->
+           
+    {% for post in site.posts %}    
+<article>
+            <div class="container">
+                <h1 class="title">
+                    <a href="{{ post.url | prepend: site.url }}">
+                        {{ post.title }}
+                    </a>
+                </h1>
+                <h2 class="subtitle">{{ post.subtitle }}</h2>
+                <ul>
+                    {% for category in post.categories %}
+                    <li class="list-inline">
+                        <span class="tag is-primary">
+                            {{ category }}
+                        </span>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+            </div>
+</article>
+    {% endfor %}
                 </div>
             </section>
         </main>
@@ -80,7 +95,6 @@
                 <a class="contact__link" href="http://api.whatsapp.com/send?1=pt_BR&phone=5511971353293">11 9 71353293</a>
             </address>
         </footer>
-        <script src="./assets/scripts/script.js"></script>
     </body>
 
 </html>

@@ -3,8 +3,8 @@ Aprendizado semanal sobre temas de frontend e boas praticas.
 
 ### Last 
 
-- [currentColor](currentcolor)
+- [currentColor](current-color)
 
 ## CSS
 
-- [currentColor](currentcolor)
+- [currentColor](current-color)

@@ -4,7 +4,8 @@ Mostrarei as mudanças da [es5(ECMAScript 5.1)](http://www.ecma-international.or
 Declaração de variaveis
 =
 Agora temos 3 tipos de declarações usando:
-1. [var](http://www.ecma-international.org/ecma-262/6.0/#sec-variable-statement) = Inicialização opcional, pode ser declarada multiplas vezes com o mesmo nome
+1. [var](http://www.ecma-international.org/ecma-262/6.0/#sec-variable-statement) = Inicialização opcional, pode ser declarada multiplas vezes com o mesmo nome.
+
 ```javascript
 (()=> {
   console.log(contador); // undefined
@@ -19,7 +20,8 @@ Agora temos 3 tipos de declarações usando:
 })();
 ```
 
-2. [let](http://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations) = Inicialização opcional, faz parte apenas do bloco onde é declarada, não é hosted;
+2. [let](http://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations) = Inicialização opcional, faz parte apenas do bloco onde é declarada, não é hosted.
+
 ```javascript
 (()=> {
   console.log(contador); // ReferenceError: can't access lexical declaration `contador' before initialization
@@ -34,7 +36,8 @@ Agora temos 3 tipos de declarações usando:
 })();
 ```
 
-3. [const](http://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations) = Variavel apenas para leitura, não pode declarar uma função ou variável com o mesmo nome no mesmo escopo tambem não é hoisted
+3. [const](http://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations) = Variavel apenas para leitura, não pode declarar uma função ou variável com o mesmo nome no mesmo escopo tambem não é hoisted.
+
 ```javascript
 (()=> {
   console.log(contador); // ReferenceError: can't access lexical declaration `contador' 

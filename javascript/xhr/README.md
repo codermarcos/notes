@@ -3,10 +3,13 @@ Conheçendo recursos do [XMLHttpRequest](https://xhr.spec.whatwg.org/) mais conh
 
 XMLHttpRequest
 =
+
 **Oque é** o XHR segundo á [mdn](https://developer.mozilla.org/pt-BR/docs/Web/API/XMLHttpRequest) é uma API que fornece funcionalidade ao cliente para transferir dados entre um cliente e um servidor.
 
 ### Uso basico
+
 Exemplo de uso com **json**
+
 ```javascript
   let xhr = new XMLHttpRequest(); // Instancia o xhr 
 
@@ -26,7 +29,9 @@ Exemplo de uso com **json**
 
   xhr.send(json);  // Enviar com os parametros do request
 ```
+
 Exemplo de uso com **form**
+
 ```javascript
   let xhr = new XMLHttpRequest(); // Instancia o xhr
   let form  = new FormData(); // Instancia do Form para adicionar seus campos
@@ -51,7 +56,9 @@ Exemplo de uso com **form**
 ```
 
 ### State 
-[states](https://xhr.spec.whatwg.org/#states) é oque identifica o estado atual do xhr que pode ser 0, 1, 2, 3, 4
+
+[states](https://xhr.spec.whatwg.org/#states) é oque identifica o estado atual do xhr que pode ser 0, 1, 2, 3, 4.
+
 ```
 0 = UNSENT, Foi instanciado mas ainda não foi iniciado. O metodo open() não foi chamado;
 1 = OPENED, Apos a chamada do metodo open();
@@ -59,9 +66,10 @@ Exemplo de uso com **form**
 3 = LOADING, Recebeu ou esta recebendo o response
 4 = DONE, O Request finalizou
 ``` 
-[readyState](https://xhr.spec.whatwg.org/#dom-xmlhttprequest-readystate) é um atributo do objeto xhr que contem o state atual do xhr 
+[readyState](https://xhr.spec.whatwg.org/#dom-xmlhttprequest-readystate) é um atributo do objeto xhr que contem o state atual do xhr. 
 
-[onreadystatechange](https://xhr.spec.whatwg.org/#event-xhr-readystatechange) Metodo usado para acompanhar o status do request
+[onreadystatechange](https://xhr.spec.whatwg.org/#event-xhr-readystatechange) Metodo usado para acompanhar o status do request.
+
 ```javascript
   xhr.onreadystatechange = () => { 
 	  if(xhr.readyState !== XMLHttpRequest.DONE) return;
@@ -70,13 +78,18 @@ Exemplo de uso com **form**
 ```
 
 ### Adicionando um header
-[setRequestHeader](https://xhr.spec.whatwg.org/#dom-xmlhttprequest-setrequestheader) Prototype utilizado para adicionar os headers do request
+
+[setRequestHeader](https://xhr.spec.whatwg.org/#dom-xmlhttprequest-setrequestheader) Prototype utilizado para adicionar os headers do request.
+
 ```javascript
   let xhr = new XMLHttpRequest(); // Instancia o xhr
   xhr.setRequestHeader('Content-Type', 'application/json');
 ```
+
 ### Abort
-[abort](https://xhr.spec.whatwg.org/#dom-xmlhttprequest-abort) Metodo do xhr utilizado para cancelar o request
+
+[abort](https://xhr.spec.whatwg.org/#dom-xmlhttprequest-abort) Metodo do xhr utilizado para cancelar o request.
+
 ```javascript
   xhr.onabort = () => {
     console.log('O request foi cancelado'); // Evento chamado quando request é cancelado
@@ -84,14 +97,19 @@ Exemplo de uso com **form**
   
   xhr.abort(); // Cancela seu request
 ```
+
 ### Progress
-[loadstart](https://xhr.spec.whatwg.org/#event-xhr-loadstart) Metodo do xhr utilizado para acompanhar o INICIO do request
+
+[loadstart](https://xhr.spec.whatwg.org/#event-xhr-loadstart) Metodo do xhr utilizado para acompanhar o INICIO do request.
+
 ```javascript
   xhr.onloadstart = (e) => { 
     	console.log(e.loaded); // Evento chamado ao fim do request
   };
 ```
-[progress](https://xhr.spec.whatwg.org/#event-xhr-progress) Metodo do xhr utilizado para acompanhar o ANDAMENTO do request
+
+[progress](https://xhr.spec.whatwg.org/#event-xhr-progress) Metodo do xhr utilizado para acompanhar o ANDAMENTO do request.
+
 ```javascript
   xhr.onprogress = (p) => { 
 	  if(p.lengthComputable) {
@@ -100,7 +118,9 @@ Exemplo de uso com **form**
     }
   };
 ```
-[loadend](https://xhr.spec.whatwg.org/#event-xhr-loadend) Metodo do xhr utilizado para acompanhar o FIM do request
+
+[loadend](https://xhr.spec.whatwg.org/#event-xhr-loadend) Metodo do xhr utilizado para acompanhar o FIM do request.
+
 ```javascript
   xhr.loadend = (e) => {
     console.log(e.loaded); // Request terminou e ja retornou seu response

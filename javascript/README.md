@@ -5,13 +5,13 @@ Aprendizado semanal sobre temas de frontend e boas praticas.
 
 
 - [Symbol](symbol)
-- [XMLHttpRequest](xmlhttprequest)
+- [XMLHttpRequest](xhr)
 - [Loops](loops)
 
 ## Javascript
 
 - [Symbol](symbol)
-- [XMLHttpRequest](xml-http-request)
+- [XMLHttpRequest](xhr)
 - [Loops](loops)
 - [Acessando Midias](acessando-midias)
 - [Comparando](comparando)

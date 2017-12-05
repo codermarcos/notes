@@ -9,7 +9,7 @@ Aprendizado semanal sobre temas de frontend e boas praticas.
 ## Javascript
 
 - [Symbol](javascript/symbol)
-- [XMLHttpRequest](javascript/xml-http-request)
+- [XMLHttpRequest](javascript/xhr)
 - [Loops](javascript/loops)
 - [Acessando Midias](javascript/acessando-midias)
 - [Comparando](javascript/comparando)

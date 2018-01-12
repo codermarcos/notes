@@ -1,0 +1,52 @@
+<%- partial('partial/header', { 
+    title: config.title, 
+    description: config.content 
+}) %>
+<main class="main-content">
+    <section class="categories">
+        <div class="categories__container">
+        <% site.categories.forEach((category) => { %> 
+            <a 
+            class="categories__category" 
+            href="/categories/<%- category.name.toLowerCase() %>"><%- category.name %></a>         
+        <% }) %>
+        </div>
+    </section>
+
+    <h5 class="divisor"><%= __('lasts') %></h5>
+    
+    <section class="posts">
+        <% page.posts.forEach((post) => { %>
+            <%- partial('partial/post-item', { 
+                title: post.title, 
+                datetime: post.date, 
+                categories: post.categories, 
+                description: post.description, 
+                lang: post.lang 
+            }) %>
+        <% }) %>
+
+        <nav class="pagination" >
+            <a 
+                class="pagination__link pagination__link--prev" 
+                href="/<%- page.prev_link %>"
+                title="Previous"><</a>
+            <a 
+                class="pagination__link" 
+                href="/"
+                title="First"><%- 1 %></a> 
+            ...
+            <%- page.current %>
+            ...
+            <a 
+                class="pagination__link" 
+                href="/lasts/<%- page.total %>"                
+                title="Last"><%- page.total %></a>
+            <a 
+                class="pagination__link pagination__link--next" 
+                href="/<%- page.next_link %>"
+                title="Next">></a>
+        </nav>
+    </section>
+</main>
+<%- partial('partial/footer') %>

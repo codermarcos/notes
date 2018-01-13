@@ -5,7 +5,7 @@
             <% site.tags.forEach((tag) => { %> 
                 <a 
                     class="tags__tag" 
-                    href="/tags/<%- url_tilte(tag.name) %>"
+                    href="/tags/<%- url_title(tag.name) %>"
                     tilte="<%= __('tag') %>"><%- tag.name %></a>         
             <% }) %>
         </div>

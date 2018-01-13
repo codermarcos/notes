@@ -1,5 +1,5 @@
 ---
-title: currentColor
+title: Conhecendo o currentcolor
 lang: pt
 date: 2017-11-21 14:57:03
 description: Entendendo os conceitos do currentColor

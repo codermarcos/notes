@@ -3,9 +3,9 @@ title: Conhecendo o currentcolor
 lang: pt
 date: 2017-11-21 14:57:03
 description: Entendendo os conceitos do currentColor
-tags: [css3]
+tags: [Css]
 categories: 
-- CSS
+- Css
 ---
 ## Entendendo
 O [currentColor](https://www.w3.org/TR/css3-color/#currentcolor), é uma variavel dinamica que contem como valor a cor atual da propriedade color do elemento.

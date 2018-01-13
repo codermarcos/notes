@@ -16,6 +16,10 @@ body {
   background-color: var(--color_secondaryDark);
 }
 
+input {
+  color: black;
+}
+
 .contact__link {
   color: var(--color_secondaryLight);
 }

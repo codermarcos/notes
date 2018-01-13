@@ -1,8 +1,8 @@
 ---
-title: Symbol oque é isso?
+title: Descobrindo o Symbol
 lang: pt
 date: 2017-12-04 22:10:04
-description: Nova feature da es6, você pode encontrar mais em [Mudancas da es5 para a es6](/javascript/mudancas-da-es5-para-a-es6/).
+description: Descobrindo oque é o symbol a es6 e como utiliza-lo.
 tags: [Javascript, ECMAScript, Mudancas da es5 para a es6, es6]
 categories: 
 - Javascript

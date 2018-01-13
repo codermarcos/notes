@@ -2,11 +2,12 @@
 title: Novidades da es8
 lang: pt
 date: 2017-09-12 23:45:05
-description: Novidades da [es8(ECMAScript 8)](http://www.ecma-international.org/ecma-262/) para acompanhar as outras implementações você tambem pode ler [Novidades da es7 (EcmaScript 7)](/novidades-da-es7)
+description: Descobrindo as novas features da es8
 tags: [Javascript, ECMAScript, es8]
 categories: 
 - Javascript
 ---
+Novidades da [es8(ECMAScript 8)](http://www.ecma-international.org/ecma-262/) para acompanhar as outras implementações você tambem pode ler [Novidades da es7 (EcmaScript 7)](/novidades-da-es7)
 ## Strings
 Temos dois novos metodos de busca que ajudaram a melhorar a sintax
 

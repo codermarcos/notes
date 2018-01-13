@@ -27,6 +27,18 @@ Para **usar em input** voçê deve atribuir um id e adicionar o atributo list ao
 ### Exemplos
 Abaixo um caso onde ele pode se tornar bem util:
 
+<label>
+    Meio de transporte:
+    <input type="text" list="transportes"/>
+</label>
+<datalist id="transportes">
+  <option value="Bicicleta">
+  <option value="Obinus">
+  <option value="Moto">
+  <option value="Carro">
+  <option value="Taxi">
+</datalist>
+
 - Input do tipo texto onde a entrada é o meio de transporte, como temos inumeras opcões deixamos as principais predefinidas como o campo é do tipo texto ele pode entrar com novas opções tambem.
 ```html
 <label>

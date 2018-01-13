@@ -1,26 +1,12 @@
 # Frontend weekly
-Aprendizado semanal sobre temas de frontend e boas praticas.
+Aprendizado semanal sobre temas de frontend e boas praticas. 
 
-### Lasts
+[frontend-weekly.codermarcos.com](http://frontend-weekly.codermarcos.com/)
 
-- [Symbol](javascript/symbol)
-- [currentColor](css/current-color)
+[Ultimos posts](http://frontend-weekly.codermarcos.com/)
 
-## Javascript
+[Posts sobre Javascript](http://frontend-weekly.codermarcos.com/categories/javascript)
 
-- [Symbol](javascript/symbol)
-- [XMLHttpRequest](javascript/xhr)
-- [Loops](javascript/loops)
-- [Acessando Midias](javascript/acessando-midias)
-- [Comparando](javascript/comparando)
-- [Promises com Async/Await](javascript/promises-com-async-await)
-- [Novidades da es8](javascript/novidades-da-es8)
-- [Novidades da es7](javascript/novidades-da-es7)
-- [Mudancas da es5 para a es6](javascript/mudancas-da-es5-para-a-es6)
+[Posts sobre HTML](http://frontend-weekly.codermarcos.com/categories/html)
 
-
-## HTML
-
-## CSS
-
-- [currentColor](css/current-color)
+[Posts sobre CSS](http://frontend-weekly.codermarcos.com/categories/css)

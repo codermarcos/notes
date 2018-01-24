@@ -2,7 +2,7 @@
 title: Como usar datalist
 lang: pt
 date: 2018-01-13 16:36:56
-description: Oque é o datalist e alguns case para usalo.
+description: Oque é o datalist e alguns cases para usalo.
 tags: [Html, Html5, Input, Tags]
 categories:
 - Html
@@ -11,10 +11,8 @@ categories:
 Este elemento [datalist](https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element) do Html5 contém uma lista de elementos [option](https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element) que representam as opções possíveis para o valor de outros elementos.
 
 
-
 ## Informações 
-Seu **display** default é none.
-Para **usar** é bem simples basta abrir a tag datalist e dentro adicionar as opções com a tag option.
+Seu **display** padrão é none. Para **usar** é bem simples basta abrir a tag datalist e dentro adicionar as opções com a tag option.
 ```html
 <datalist>
   <option value="opcao_1">

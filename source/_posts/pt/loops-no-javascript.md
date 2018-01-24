@@ -1,15 +1,15 @@
 ---
-title: Comparando no Javascript
+title: Loops no Javascript
 lang: pt
 date: 2017-10-21 02:58:04
-description: Conhecendo melhor os laços do Javascript e suas diferentes utilidades.
+description: Conhecendo melhor os laços de repetição do Javascript e suas diferentes utilidades.
 tags: [Javascript, Loops]
 categories: 
 - Javascript
 ---
 Listei alguns laços de repetição e seus funcionamentos.
 
-- [for]() Loop default de contandor
+- [for](http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.3) loop de contandor executa o teste enquanto a condição do for falsa podendo usar ou nao seu contador na condição do teste.
 
 > for é o loop mais flexisivel e performatico quando comparado com os seguintes
 
@@ -22,7 +22,7 @@ for (let i = 0; i > letras.length; i++) {
 }
 ```
 
-- [for ...in]() Loop percorre o array retornando o o nome de cada elemento tambem pode se usado em objetos
+- [for ...in](https://www.ecma-international.org/ecma-262/6.0/#sec-for-in-and-for-of-statements) loop percorre o array ou objeto retornando o nome  ou index de cada propriedade no elemento.
 
 ```javascript 
 const letras = ['a', 'b']; // Quando o array é simples ele retorna o numero do de index do atual elemento
@@ -39,7 +39,7 @@ for (let o in objeto) {
 }
 ```
 
-- [for ...of]() Loop percorre o array retornando o valor do elemento
+- [for ...of](https://www.ecma-international.org/ecma-262/6.0/#sec-for-in-and-for-of-statements) Loop percorre o array retornando o valor do elemento
 
 ```javascript   
 const letras = ['a', 'b']; 
@@ -49,7 +49,7 @@ for (let l of letras) {
 }
 ```
 
-- [while]() Loop generico executa prieiro o teste depois executa a logica
+- [while](http://www.ecma-international.org/ecma-262/6.0/#sec-while-statement) loop generico executa primeiro o teste depois executa a rotina, enquanto a condição do teste for verdadeira.
 
 ```javascript   
 const alfabeto = ['a', 'b', 'c'];
@@ -60,7 +60,7 @@ while (alfabeto.length % 2 === 0) {
 console.log(alfabeto); // Array [ "a", "b", "c" ]
 ```
 
-- [do ...while]() Loop generico executa a logica primeiro depois realiza o teste
+- [do ...while](http://www.ecma-international.org/ecma-262/6.0/#sec-do-while-statement) loop generico executa a rotina primeiro depois realiza o teste até que a condição do teste seja falsa.
 
 ```javascript   
 const alfabeto = ['a', 'b', 'c'];
@@ -70,21 +70,29 @@ do {
 console.log(alfabeto); // Array [ "a" ]
 ```
 
-## Array.prototype
+## [Array](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.1.1).prototype
 
-- [foreach]() Loop percorre o array retornando o elemento podendo exibir um index ou não.
+- [forEach](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.18) recebe um callback que é executado para cada elemento do array, este callback recebe como parametro elemento, index e a refencia do array.
 
 ```javascript   
 const letras = ['a', 'b'];
 
-letras.foreach((letra, i) => {
-    console.log(i);         // 0, 1
+letras.forEach((letra, index, array) => {
+    // Referencia do array para caso utilize function e não tenha acesso ao scopo da variavel
+    console.log(array); // [ 'a', 'b'], [ empty, 'b']
+
+    // Index da letra
+    console.log(index); // 0, 1
+
+    // Letra do index atual
     console.log(letra); // 'a', 'b'
+
+    delete letras[index];
 });
 
 ```
 
-- [map]() Loop que executa a logica diretamente no objeto retornando um novo array.
+- [map](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.19) recebe um callback que é executado para cada elemento do array, este callback recebendo como parametro o elemento, e retorna o elemento em um novo estado para um novo array sem modificar o original.
 
 ```javascript   
 const tabuada = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -94,7 +102,7 @@ const dois = tabuada.map((numero) => numero * 2);
 console.log(dois); // Array [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]
 ```
 
-- [filter]() Loop para filtrar arrays.
+- [filter](https://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.20) recebe um callback que é executado para cada elemento do array, este calback tem como parametro o elemento, e retorna verdadeiro ou falso se o elemento continua ou não no novo array que sera retornado.
 
 ```javascript   
 const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -104,17 +112,19 @@ const pares = numeros.filter((numero) => numero % 2 === 0);
 console.log(pares); // Array [ 2, 4, 6, 8, 10 ]
 ```
 
-- [every]() Loop para verificar valor no array inteiro retornando true ou false.
+- [every](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.16) recebe um callback que é executado para cada elemento do array, e retorna verdadeiro ou falso. Se algum callback tiver retorno falso, o retorno do metodo every sera falso.
 
 ```javascript   
 [ 2, 4, 6, 8, 10 ].every((numero) => numero % 2 === 0);    // true
 [ 1, 2, 4, 6, 8, 10 ].every((numero) => numero % 2 === 0); // false
 ```
 
-- [sort]() Loop para ordenar array inteiro com funcao que deve retornar se o array sobe 1 ou desce 1 em sua posição ou permanece com 0.
+- [sort](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.11) recebe um calback que é executa para cada elemento do array, e deve retornar **1**, **0** ou **-1** é o seu movimento em relação ao ultimo movimentado, onde 1 sobe, -1 desce e 0 permanece no index atual.
 
 ```javascript   
-const decrescente = [ 2, 4, 6, 8, 10 ].sort((v1, v2) => {
+const numeros = [ 2, 4, 6, 8, 10 ];
+
+numeros.sort((v1, v2) => {
   if (v1 > v2) {
     return -1;
   }
@@ -124,5 +134,5 @@ const decrescente = [ 2, 4, 6, 8, 10 ].sort((v1, v2) => {
   return 0;
 });   
 
-console.log(decrescente); // Array [ 10, 8, 6, 4, 2 ]
+console.log(numeros); // Array [ 10, 8, 6, 4, 2 ]
 ```

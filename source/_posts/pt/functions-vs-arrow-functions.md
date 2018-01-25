@@ -1,7 +1,7 @@
 ---
 title: Functions vs Arrow-functions
 lang: pt
-date: 2018-01-23 15:59:14
+date: 2018-01-23 15:40:14
 description: Entendendo melhor function e arrow function
 tags: [Javascript, Functions, ECMAScript, Mudancas da es5 para a es6, es6]
 categories: 

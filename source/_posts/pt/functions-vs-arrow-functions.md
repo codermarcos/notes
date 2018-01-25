@@ -84,7 +84,10 @@ var crescente = () => {
 }
 crescente(3,2,5,1,4,8,7,6); // Exception: ReferenceError: arguments is not defined
 ```
-> uma solução para usar arrow function neste caso seria usar ``` var crescente = (...arguments) => {} ```
+> uma solução para usar arrow function neste caso seria usar 
+```javascript 
+var crescente = (...arguments) => {}
+```
 
 * [sintax]() Arrow function alem de ter uma declaração diferente podemos omitir os conchetes quando omitidos o retorno da esspreção sera o retorno da função. Segue exemplo:
 
@@ -93,7 +96,9 @@ crescente(3,2,5,1,4,8,7,6); // Exception: ReferenceError: arguments is not defin
 
 (nome => { `Nome ${nome}` })('Marcos'); // undefined
  ```
- para retornar objetos temos que utilizar da seguinte forma
+
+Para retornar objetos temos que utilizar da seguinte forma
+
 ```javascript
 (nome => ({nome}))('Marcos'); // 'Marcos'
 

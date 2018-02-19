@@ -98,6 +98,7 @@ input {
 .main-header__title {
   font-size: 4.5em;
   font-weight: bold;
+  text-align: center;
 }
 
 .main-header__background {

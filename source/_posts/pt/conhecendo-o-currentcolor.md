@@ -9,6 +9,7 @@ categories:
 ---
 ## Entendendo
 O [currentColor](https://www.w3.org/TR/css3-color/#currentcolor), é uma variavel dinamica que contem como valor a cor atual da propriedade color do elemento.
+
 ### Exemplos
 Botão outline
 ```css
@@ -37,3 +38,7 @@ h1::after {
     background: currentColor;
 }
 ```
+
+### Compatibilidade 
+
+**86%** dos browsers ja suportam esta feature voce pode conferir melhor o suporte no [can i user](https://caniuse.com/#feat=css-variables).

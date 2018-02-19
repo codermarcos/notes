@@ -1,7 +1,10 @@
 :root {
   /* COLORS */
   --color_primaryLight: #fffff7;
-  --color_primaryAcent: #c0392b;
+  --color_primaryAcent: #d83f45;
+  --color_javascript: #f1c026;
+  --color_html: #f0682a;
+  --color_css: #30aadb;
   --color_secondaryDark: #282830;
   --color_secondaryMiddle: #abb2bf;
   --color_secondaryLight: #60646d;

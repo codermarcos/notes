@@ -49,7 +49,7 @@
         <div class="tags__container">
         <% page.tags.forEach((tag) => { %> 
             <a 
-                class="tags__tag" 
+                class="tags__tag <%- url_data(page.categories) %>" 
                 href="/tags/<%- url_title(tag.name) %>"
                 tilte="<%= __('tag') %>"><%- tag.name %></a>         
         <% }) %>

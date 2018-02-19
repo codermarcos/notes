@@ -112,11 +112,19 @@ const pares = numeros.filter((numero) => numero % 2 === 0);
 console.log(pares); // Array [ 2, 4, 6, 8, 10 ]
 ```
 
-- [every](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.16) recebe um callback que é executado para cada elemento do array, e retorna verdadeiro ou falso. Se algum callback tiver retorno falso, o retorno do metodo every sera falso.
+- [every](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.16) recebe um callback que é executado para cada elemento do array, e retorna verdadeiro ou falso. Se **ALGUM** callback tiver retorno falso, o retorno do metodo every sera falso.
 
 ```javascript   
 [ 2, 4, 6, 8, 10 ].every((numero) => numero % 2 === 0);    // true
 [ 1, 2, 4, 6, 8, 10 ].every((numero) => numero % 2 === 0); // false
+```
+
+- [some](https://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.17) muito parecido com every recebe um callback que é executado para cada elemento do array, e retorna verdadeiro ou falso. Se **TODO** callback tiver retorno falso, o retorno do metodo some sera falso.
+
+```javascript   
+[ 2, 4, 6, 8, 10 ].every((numero) => numero % 2 === 0);    // true
+[ 1, 2, 4, 6, 8, 10 ].every((numero) => numero % 2 === 0); // true
+[ 1, 3, 5, 7, 9, 11 ].every((numero) => numero % 2 === 0); // false
 ```
 
 - [sort](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.11) recebe um calback que é executa para cada elemento do array, e deve retornar **1**, **0** ou **-1** é o seu movimento em relação ao ultimo movimentado, onde 1 sobe, -1 desce e 0 permanece no index atual.
@@ -135,4 +143,16 @@ numeros.sort((v1, v2) => {
 });   
 
 console.log(numeros); // Array [ 10, 8, 6, 4, 2 ]
+```
+
+- [reduce](https://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.21) recebe um calback que é executa para cada elemento do array, e deve retornar um valor qualquer, esse callback deve receber como parametro as posições **anterior**, **atual**, o **indice**, e o **array**, seu retorno sera o retorno do callback.
+
+```javascript   
+const numeros = [ 1, 1, 1, 1, 1 ];
+
+const total = numeros.reduce((anterior, atual, indice, array) => {
+  return anterior + atual;
+});   
+
+console.log(total); // 5
 ```

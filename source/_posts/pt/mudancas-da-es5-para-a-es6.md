@@ -17,3 +17,4 @@ Abaixo estara os links com as principais mudanças ocorridas da [es5(ECMAScript 
 - [Spread](/pt/javascript/spread)
 - [Descobrindo o Symbol](/pt/javascript/descobrindo-o-symbol)
 - [Functions vs Arrow-Functions](/pt/javascript/functions-vs-arrow-functions)
+- [Porque usar Map](/pt/javascript/porque-usar-map)

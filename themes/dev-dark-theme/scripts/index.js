@@ -10,7 +10,7 @@ hexo.extend.helper.register('url_data', args => {
 });
 hexo.extend.helper.register('first_data', args => {
   let data = args.data[0] ? args.data[0].name : '';
-  return data.replace(new RegExp(' ', 'g'), '-').toLowerCase();
+  return encodeURIComponent(data.replace(new RegExp(' ', 'g'), '-').toLowerCase());
 });
 hexo.extend.helper.register('url_title', args => {
   let original = args;

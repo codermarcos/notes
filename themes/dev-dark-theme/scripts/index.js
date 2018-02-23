@@ -14,5 +14,5 @@ hexo.extend.helper.register('first_data', args => {
 });
 hexo.extend.helper.register('url_title', args => {
   let original = args;
-  return original.replace(new RegExp(' ', 'g'), '-').toLowerCase();
+  return encodeURIComponent(original.replace(new RegExp(' ', 'g'), '-').toLowerCase());
 });

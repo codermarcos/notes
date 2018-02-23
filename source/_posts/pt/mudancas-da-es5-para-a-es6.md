@@ -13,7 +13,7 @@ Abaixo estara os links com as principais mudanças ocorridas da [es5(ECMAScript 
 - [Arrays na es6 oque mudou?](/pt/javascript/arrays-na-es6)
 - [Escrevendo uma classe na es6](/pt/javascript/escrevendo-uma-classe-na-es6)
 - [Novos String.prototypes es6](/pt/javascript/novos-string.prototypes-es6)
-- [Variaveis](/pt/javascript/delcaração-de-variaveis)
+- [Variaveis](/pt/javascript/declaração-de-variaveis)
 - [Spread](/pt/javascript/oque-é-spread)
 - [Descobrindo o Symbol](/pt/javascript/descobrindo-o-symbol)
 - [Functions vs Arrow-Functions](/pt/javascript/functions-vs-arrow-functions)

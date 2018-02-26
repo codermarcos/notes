@@ -1,5 +1,5 @@
 ---
-title: Arrays na es6
+title: Array na es6
 lang: pt
 date: 2017-08-30 00:00:01
 description: Novos prototypes da classe Array que foram implementados na es6.

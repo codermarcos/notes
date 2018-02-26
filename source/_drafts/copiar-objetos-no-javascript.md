@@ -1,7 +1,6 @@
 ---
 title: Copiar objetos no javascript
 lang: pt
-date: 2018-02-25 16:02:53
 description: Aprendendo as diferentes maneiras de copiar no javascript
 tags: [Javascript, Object]
 categories:

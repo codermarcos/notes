@@ -1,5 +1,5 @@
 ---
-title: Declaração de variaveis es6
+title: Declaração de variaveis na es6
 lang: pt
 date: 2017-09-06 14:42:04
 description: Novas formas de declarar variaveis na es6.

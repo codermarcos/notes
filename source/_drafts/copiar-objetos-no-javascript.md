@@ -119,5 +119,6 @@ O que aconteceu na verdade foi bem simple como a propriedade contato é um objet
 
 Então sempre que for copiar um objeto tenho que passar propriedade por propriedade meio chato né?
 
+**Criar uma função** [deepCopy]()
 ```javascript
 ```

@@ -45,6 +45,7 @@ input {
   justify-content: center;
   flex-wrap: wrap;
   min-height: 40vh;
+  font-size: 1.2em;
 }
 
 .main-content__container {

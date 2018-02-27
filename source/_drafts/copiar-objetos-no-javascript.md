@@ -35,19 +35,39 @@ Por este motivo quando alterar a pessoa que o clone ira estar exatamente igual
 ```javascript 
 pessoa.idade = 19;
 
-console.log(clone); // Object { constatos: Object {...}, idade: 19, nome: "Marcos", }
+console.log(clone); // Object { contatos: Object {...}, idade: 19, nome: "Marcos", }
 ```
 
 <p align="center">
     <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/copiar-objetos-no-javascript/create-property-idade.png" alt="Criar propriedade idade">
 </p>
 
-Isso ocorre quando se atribui um objeto diretamente
+Isso ocorre quando se atribui um objeto diretamente, para contornar isto você pode atribuir uma propriedade de cada vez assim 
 
+```javascript 
+var clone = {
+    nome: pessoa.nome,
+    contatos: pessoa.contatos
+};
 
+pessoa.idade = 19;
 
-
+console.log(clone); // Object { contatos: Object { email: "coder.marcos@gmail.com" }, nome: "Marcos", }
 ```
-Quando o clone foi criado não existia a propriedade idade na pessoa ele foi adicionado depois, da copia e mesmo assim foi adicionado ao clone, porque isso acontece?
 
-No javascript quando se atribui um objeto a outro ele cria uma referencia na memoria
+Agora o objeto permanace como foi copiado certo?  
+
+```javascript 
+var clone = {
+    nome: pessoa.nome,
+    contatos: pessoa.contatos
+};
+
+pessoa.idade = 19;
+pessoa.contato.github = 'codermarcos';
+
+console.log(clone); // Object { contatos: Object { email: "coder.marcos@gmail.com", github: "codermarcos" }, nome: "Marcos", }
+```
+<p align="center">
+    <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/copiar-objetos-no-javascript/wtf.jpg" alt="WTF">
+</p>

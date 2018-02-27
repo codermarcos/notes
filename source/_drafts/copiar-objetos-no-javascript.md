@@ -17,16 +17,20 @@ var pessoa = {
 };
 ```
 <p align="center">
-    <img width="100%" src="/create-pessoa.png" alt="Criar objeto pessoa">
+    <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/copiar-objetos-no-javascript/create-pessoa.png" alt="Criar objeto pessoa">
 </p>
 
-Agora copiamos o objeto para a variavel clone certo?
+Agora copiamos o objeto para a variavel clone certo
 
 ```javascript 
 var clone = pessoa;
 ```
+Internamente o javascript não criou outro objeto ele criou uma refencia na memoria que aponta para pessoa
+<p align="center">
+    <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/copiar-objetos-no-javascript/assign-pessoa-to-clone.png" alt="Criar objeto clone">
+</p>
 
-Podemos alterar a pessoa que o clone se mantem igual
+Por este motivo quando alterar a pessoa que o clone ira estar exatamente igual
 
 ```javascript 
 pessoa.idade = 19;
@@ -34,7 +38,12 @@ pessoa.idade = 19;
 console.log(clone); // Object { constatos: Object {...}, idade: 19, nome: "Marcos", }
 ```
 
-Oque acontece no javascript se eu copio um objeto desta forma?
+<p align="center">
+    <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/copiar-objetos-no-javascript/create-property-idade.png" alt="Criar propriedade idade">
+</p>
+
+Isso ocorre quando se atribui um objeto diretamente
+
 
 
 

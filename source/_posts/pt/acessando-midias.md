@@ -18,7 +18,7 @@ if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
 }
 ```
 
-- [enumerateDevices](https://w3c.github.io/mediacapture-main/#dom-mediadevices-enumeratedevices()) Retorna um array com informações de todas as dispositivos de input e output disponiveis para o browser.
+- [enumerateDevices](https://w3c.github.io/mediacapture-main/#dom-mediadevices-enumeratedevices() Retorna um array com informações de todas as dispositivos de input e output disponiveis para o browser.
 ```javascript
     navigator.mediaDevices.enumerateDevices()
         .then(devices => console.log(devices)); // [...] MediaDeviceInfo

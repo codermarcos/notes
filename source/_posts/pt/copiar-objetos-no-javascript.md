@@ -97,18 +97,16 @@ JSON.stringify(a); // TypeError: cyclic object value
 Para resolver é bem simples basta criar um replacer para auxiliar o stringify
 
 ```javascript
-const replacer = () => {
-  const seen = [];
+var seen = [];
 
-  return (key, value) => {
-    if (value != null && typeof value == 'object') {
-      if (seen.indexOf(value) >= 0) {
-        return;
-      }
-      seen.push(value);
+var replacer = (key, value) => {
+  if (value != null && typeof value == 'object') {
+    if (seen.indexOf(value) >= 0) {
+      return;
     }
-    return value;
-  };
+    seen.push(value);
+  }
+  return value;
 };
 
 JSON.stringify(a, replacer);

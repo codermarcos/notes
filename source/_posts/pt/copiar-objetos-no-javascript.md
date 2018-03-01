@@ -29,7 +29,7 @@ var pessoa = {
 ```
 
 <br>
-Uma representação grafica seria do que acontece no javascript seria algo assim
+Uma representação grafica do que acontece no javascript seria algo assim
 <p align="center">
     <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/copiar-objetos-no-javascript/create-pessoa.png" alt="Criar objeto pessoa">
 </p>

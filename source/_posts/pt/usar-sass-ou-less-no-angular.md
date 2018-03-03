@@ -77,7 +77,7 @@ E tambem no **.angular-cli.json**
  
 ## Casos
 
-Se for **usar um arquivo para variaveis ou funções** e deseja usa-lo nos components você precisa adicionar esta linha no **.angular-cli.json**
+Se for **usar um arquivo para variaveis ou funções** e deseja usa-lo nos componentes, é preciso importalo dentro de cada componente. Para importar mais facilmente pode adicionar esta linha no **.angular-cli.json**. 
 
 ```json
 "stylePreprocessorOptions": {
@@ -86,13 +86,13 @@ Se for **usar um arquivo para variaveis ou funções** e deseja usa-lo nos compo
   ]
 }
 ```
-
+<br>
 Porque quando for importar precisa apenas de digitar o nome do arquivo. Por exemplo pense no seguinte caso
-
 <p align="center">
-    <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/frameworks/usar-sass-ou-less-no-angular/path-files.png" alt="estrutura de arquivos no angular">
+    <img width="50%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/frameworks/usar-sass-ou-less-no-angular/path-files.png" alt="estrutura de arquivos no angular">
 </p>
 
+<br>
 Então dentro de **variables.scss** tem o seguinte codigo
 
 ```scss
@@ -101,27 +101,30 @@ $my-color: black;
 
 ```
 
+<br>
 Então para usar a variavel $my-color em **style.scss** usaria a seguinte linha 
 
 ```scss
 /*      style.scss      */
-@import '../sass/variables';
+@import 'style/variables';
 
 body {
   background-color: $my-color;
 }
 ```
 
+<br>
 Para não precisar adicionar o caminho toda vez basta apenas adicioinar esta linha no arquivo **.angular-cli.json**
 
 ```json
 "stylePreprocessorOptions": {
   "includePaths": [
-    "../src/sass/"
+    "../src/style/"
   ]
 }
 ```
 
+<br>
 Então para usar agora basta apenas usar o nome do arquivo
 
 ```scss
@@ -133,3 +136,6 @@ body {
 }
 ```
 
+### Conclusão 
+
+É isso espero ter ajudado ;D

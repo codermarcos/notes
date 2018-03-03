@@ -1,8 +1,8 @@
 ---
-title: Como usar sass ou less no angular
+title: Usar sass ou less no angular
 lang: pt
 date: 2018-03-03 11:55:34
-description: Alguns problemas que é possivel encotrar usando pre-compiladores e como resolve-los
+description: Alguns problemas que é possivel encontrar usando pre-compiladores e como resolve-los
 tags: [Frameworks, Angular, Scss, Less]
 categories:
 - Frameworks
@@ -29,7 +29,7 @@ ng new nome-do-app --style=less
 
 ## Migrando um projeto para sass
 
-Se você ja criou o app ou quer migrar seu app para sass você pode começar a criar seus novos componentes com sass usando alguma destas linhas de comando
+Se ja criou o app ou quer migrar seu app para sass você pode começar a criar seus novos componentes com sass usando alguma destas linhas de comando
 
 Para usar **scss** --style=**scss**
 ```bash
@@ -59,7 +59,7 @@ Para conferir se ocorreu como esperado você pode ir no arquivo **.angular-cli.j
 Se não você pode adicionar manualmente.
 
 <br>
-Então você pode alterar os arquivos ja existentes para sass, scss ou less mudando a extensão do arquivo e seu import dentro do component
+Então pode alterar os arquivos ja existentes para sass, scss ou less mudando a extensão do arquivo e seu import dentro do component
 
 ```typescript
   // app.component.ts
@@ -77,7 +77,7 @@ E tambem no **.angular-cli.json**
  
 ## Casos
 
-Se você for **usar um arquivo para variaveis**  e deseja usa-lo nos components você precisa adicionar esta linha no **.angular-cli.json**
+Se for **usar um arquivo para variaveis ou funções** e deseja usa-lo nos components você precisa adicionar esta linha no **.angular-cli.json**
 
 ```json
 "stylePreprocessorOptions": {
@@ -87,4 +87,49 @@ Se você for **usar um arquivo para variaveis**  e deseja usa-lo nos components 
 }
 ```
 
+Porque quando for importar precisa apenas de digitar o nome do arquivo. Por exemplo pense no seguinte caso
+
+<p align="center">
+    <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/frameworks/usar-sass-ou-less-no-angular/path-files.png" alt="estrutura de arquivos no angular">
+</p>
+
+Então dentro de **variables.scss** tem o seguinte codigo
+
+```scss
+
+$my-color: black;
+
+```
+
+Então para usar a variavel $my-color em **style.scss** usaria a seguinte linha 
+
+```scss
+/*      style.scss      */
+@import '../sass/variables';
+
+body {
+  background-color: $my-color;
+}
+```
+
+Para não precisar adicionar o caminho toda vez basta apenas adicioinar esta linha no arquivo **.angular-cli.json**
+
+```json
+"stylePreprocessorOptions": {
+  "includePaths": [
+    "../src/sass/"
+  ]
+}
+```
+
+Então para usar agora basta apenas usar o nome do arquivo
+
+```scss
+/*      style.scss      */
+@import 'variables';
+
+body {
+  background-color: $my-color;
+}
+```
 

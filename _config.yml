@@ -17,6 +17,13 @@ language: pt
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
+# Show comments
+## Docs: https://developers.facebook.com/tools/comments/
+comments:
+  show: true
+  moderation: true
+  fb_user_id: 100014732220660
+  
 # RSS
 feed:
   type: atom

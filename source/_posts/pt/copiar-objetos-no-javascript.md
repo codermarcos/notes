@@ -13,7 +13,7 @@ date: 2018-02-28 18:14:29
 
 ## Iniciando
 
-Para um melhor entendimento vou criar um objeto pessoa que ira ser modificado mas antes deve ser clonado seu estado original.
+Para um melhor entendimento, vou criar um objeto pessoa que ira ser modificado mas antes deve ser clonado seu estado original.
 
 ## Criando a pessoa
 
@@ -48,7 +48,7 @@ Internamente o javascript não criou outro objeto ele criou uma refencia na memo
     <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/copiar-objetos-no-javascript/assign-pessoa-to-clone.png" alt="Criar objeto clone">
 </p>
 
-Por este motivo quando alterar a pessoa que o clone ira estar exatamente igual
+Por este motivo quando alterar a pessoa o clone estara exatamente igual
 
 ```javascript
 pessoa.idade = 19;
@@ -131,9 +131,9 @@ teste();
 
 No exemplo acima a e b sempre seram referenciadas então o algoritimo considera que ambos os objetos estão sendo referenciados pelo menos uma vez então nenhum deles podem ser coletados da memoria.
 
-## Copiar sem refencia
+## Copiar sem referencia
 
-Paga copiar um objeto de fato sem referencia você pode atribuir uma propriedade de cada vez desta forma
+Para copiar um objeto de fato sem referencia você pode atribuir uma propriedade de cada vez desta forma
 
 ```javascript
 var clone = {
@@ -152,11 +152,11 @@ console.log(clone);
 // }
 ```
 
-Agora o objeto permanace como foi copiado certo? Podemos alterar tudo que ele continua o mesmo.
+Agora o objeto permanece como foi copiado. Podemos alterar tudo, que ele continua o mesmo.
 
-## Deepcopy
+## Deep copy
 
-Exceto se a propriedade dele for um object tambem... rsrsr
+Exceto se uma propriedade dele for um objeto tambem... rsrsr. 
 
 ```javascript
 var clone = {
@@ -181,20 +181,22 @@ console.log(clone);
     <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/copiar-objetos-no-javascript/wtf.jpg" alt="WTF">
 </p>
 
-O que aconteceu na verdade foi bem simples como a propriedade contato é um objeto ele apontou o **clone.contatos** e **pessoa.contatos** para **contatos**, é por esse motivo javascript é uma das linguagens mais performaticas, sempre que você atribui diretamente um objeto ele não copia ele criar uma referencia. Veja a representação grafica oque aconteceu.
+O que aconteceu na verdade foi bem simples, como a propriedade contato é um objeto, ele apontou o **clone.contatos** e **pessoa.contatos** para **contatos**. 
+É por esse motivo javascript é uma das linguagens mais performaticas, sempre que você atribui diretamente um objeto, ele não copia, ele criar uma referencia. Veja a representação grafica o que aconteceu.
 
 <p align="center">
     <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/copiar-objetos-no-javascript/create-clone.png" alt="Create clone">
 </p>
+**Deep copy** sua tradução literal é "copia profunda". Exatamente oque é um algoritimo que realiza uma copia manual sem referencia, de todas a propriedades que são objetos.
 
 ### Soluções
 
-Então sempre que for copiar um objeto tenho que passar propriedade por propriedade meio chato né? uma solução é fazer um algorito de deepcopy:
+Então, sempre que for copiar um objeto tenho que passar propriedade por propriedade? meio chato né? Uma solução é fazer um algorito de deep copy:
 <br>
 
 #### Objeto simples
 
-Se estiver usando um **objeto simples** apenas propriedades com valores primitivos pode usar
+Se estiver usando um **objeto simples** (apenas propriedades com valores primitivos), pode usar
 
 **Assign** da [es6](/pt/javascript/mudanças-da-es5-para-a-es6/)
 
@@ -234,12 +236,12 @@ pessoa.contatos.github = 'codermarcos';
 console.log(clone); // Object { nome: "Marcos", contatos: { email: "coder.marcos@gmail.com" } }
 ```
 
-Assim ele tranforma seu objeto em um valor primitivo criando um novo espaço na memoria e então apartir deste valor ele cria um novo objeto.
+Assim ele tranforma seu objeto em um valor primitivo criando um novo espaço na memória e então apartir deste valor ele cria um novo objeto.
 <br>
 
 #### Objeto complexos
 
-Uma forma mais flexivel é criar uma função de deepcopy
+Uma forma mais flexível é criar uma função de deep copy
 
 ```javascript
 var pessoa = { 
@@ -271,4 +273,4 @@ console.log(clone);
 
  ### Conclusão
 
- Copiar objetos no javascript pode ser algo muito complexo por isso deve se saber bem oque se faz ;D
+ Copiar objetos no javascript pode ser algo muito complexo, porque acabar criando muitas referencia e causar um [memory leak](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Memory_Management) (Ecedex de consumo de memoria) por isso deve se saber bem oque se faz ;D

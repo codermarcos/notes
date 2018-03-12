@@ -34,11 +34,12 @@ var pessoa = {
 E o comportamento customizado sera usando a trap (armadilha) no **set** ou seja quando alguem definir um novo valor para qualquer propriedade do objeto
 ```javascript
 var handler = {
-  set(target, key, value) {
+  set(target, key, value, receiver) {
     console.log(`A propriendade "${key}" esta recebedo "${value}"`);
-    console.log(target); // target é o objeto original
-    console.log(key);    // key é o nome da prop que esta sendo alterada
-    console.log(value);  // value é o novo valor que esta sendo definido
+    console.log(target);    // target é o objeto original
+    console.log(key);       // key é o nome da prop que esta sendo alterada
+    console.log(value);     // value é o novo valor que esta sendo definido
+    console.log(receiver);  // receiver é como o proxy estara apos o disparo da armadilha
 
     target[key] = value; // para alterar o objeto original
   }
@@ -64,8 +65,117 @@ proxy.nome = 'Marcos Junior';
 ```
 ## Tipos de traps (Armadinhas)
 
-##### Set
-Como visto acima o set é disparado quando alguem define um novo valor para uma propriedade
+Traps nada mais são que os tipos de armadilhas que pode ter dentro de um handler ou seja qual ação vai disparar o proxy. Listei abaixo as que acho mais uteis:
+
+##### get
+Como visto acima o set é disparado quando alguem define um novo valor para uma propriedade.
 
 ```javascript
+var pessoa = {
+  nome: 'Marcos'
+};
+
+var proxy = new Proxy(pessoa, {
+  set(target, key, value, receiver) {
+    target[key] = value.toUpperCase();
+  }
+}); 
+
+proxy.nome = 'Junior';
+
+console.log(pessoa); // Object { nome: "JUNIOR" }
 ```
+> Observação se não atribuir o value ao objeto target ele não atualizara o valor
+<br>
+
+##### get
+O get é disparado toda vez que alguem solicitar alguma propriedade daquele objeto.
+
+```javascript
+var pessoa = {
+  nome: 'Marcos'
+};
+
+var proxy = new Proxy(pessoa, {
+  get(target, key) {
+    return `O valor solicitado é ${target[key]}`;
+  }
+}); 
+
+console.log(proxy.nome); // O valor solicitado é Marcos
+```
+<br>
+
+##### has
+Has muito parecido com get porem dispara quando é verificado se existe aquela propriedade naquele objeto.
+
+```javascript
+var pessoa = {
+  nome: 'Marcos'
+};
+
+var proxy = new Proxy(pessoa, {
+  has(target, key) {
+    // Negaremos a saida para afetar o resultado
+    return !(key in target);
+  }
+}); 
+
+// Ele retornara false mesmo existindo nome em proxy
+console.log('nome' in proxy); // false
+```
+<br>
+
+#### deleteProperty
+
+deleteProperty por sua tradução ja diz tudo "excluir propriedade", é exatamente assim que essa armadilha é disparada, toda vez que alguem tentar excluir uma propriedade.
+
+```javascript
+var pessoa = {
+  nome: 'Marcos'
+};
+
+var proxy = new Proxy(pessoa, {
+  deleteProperty(target, key) {
+    console.log(`Deletando ${key}`);
+    delete target[key]
+  }
+}); 
+
+delete proxy.nome; // Deletando nome
+```
+<br>
+
+#### defineProperty
+
+defineProperty tambem por sua tradução ja diz tudo "definir propriedade", é exatamente assim que essa armadilha é disparada, toda vez que alguem tentar criar uma nova propriedade.
+```javascript
+var pessoa = {
+  nome: 'Marcos'
+};
+
+var proxy = new Proxy(pessoa, {
+  defineProperty(target, key, descriptors) {
+    console.log(`Criando uma nova propriedade chamada ${key} com valor ${descriptors.value}`);
+    console.log(descriptors);
+    return target;
+  }
+}); 
+
+proxy.idade = 19; // Criando uma nova propriedade chamada idade com valor 19
+                             // Object { value: 19, writable: true, enumerable: true, configurable: true }
+```
+
+## Uso real
+
+Não é muito interessante para executar ações simples. Mas pode se tornar muito interessante e util para deixar o codigo mais limpo e reutilizavel. Alguns exemplos são:
+
+* Validações
+* Correção de variaveis
+* Implementar ações no DOM 
+* Restringir acesso a valores 
+* Extender objetos nativos do javascript.
+
+
+## Suporte 
+Seu suporte jas esta em **87,66%** segundo o [can i use](https://caniuse.com/#feat=proxy) então pode usar tranquilo. 

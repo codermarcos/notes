@@ -282,6 +282,7 @@ input {
     align-items: center;
     display: flex;
     justify-content: space-around;
+    height: 75px;
 }
 
 .icon {
@@ -291,9 +292,9 @@ input {
     text-align: center;
     display: inline-block;
     vertical-align: bottom;
-    transition: all 0.4s ease-in;
-    -moz-transition: all 0.4s ease-in;
-    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
 }
 
 .icon__svg {
@@ -301,14 +302,13 @@ input {
     height: 48px;
     border-radius: 50%;
     fill: var(--color_primaryLight);
-    transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -moz-transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -moz-transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
 
 .icon:hover {
     width: 65px;
-    height: 70px;
     vertical-align: top;
 }
 

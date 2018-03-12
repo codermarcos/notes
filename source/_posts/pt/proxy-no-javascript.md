@@ -31,7 +31,7 @@ var pessoa = {
 };
 ```
 
-E o comportamento customizado sera usando a trap (armadilha) no **set** ou seja quando alguem definir um novo valor para qualquer propriedade do objeto
+E o comportamento customizado sera usando a trap (armadilha) no **set** ou seja quando alguem definir um novo valor para qualquer propriedade do objeto ele que ira interceptar esta ação.
 ```javascript
 var handler = {
   set(target, key, value, receiver) {
@@ -182,4 +182,4 @@ Seu suporte jas esta em **87,66%** segundo o [can i use](https://caniuse.com/#fe
 
 ## Conclusão 
 
-É sempre bom sair do "arroz e feião" do javascript conhecer novos objetos, funções e caracteristicas que facilitam ou até mesmo ajudam a limpar nosso codigo. Nesse caso acho que o **Proxy** em grande parte veio para limpar nosso codigo e deixa-lo mais legivel e reutilizavel.
+É sempre bom sair do "arroz e feião" do javascript conhecer novos objetos, funções e caracteristicas que facilitam ou até mesmo ajudam a limpar nosso codigo. Nesse caso acho que o **Proxy** em grande parte veio para limpar nosso codigo e deixa-lo mais legivel e reutilizavel. Como [Addy Osmani](https://developers.google.com/web/resources/contributors/addyosmani) disse  "Embora estejamos despedindo de **Object.observe()** agora é possível temos um possivel polyfill usando o Proxie"

@@ -10,6 +10,8 @@
         <meta name="content" content="<%- config.content %>"><% } %>
     <% if(config.keywords) { %>
         <meta name="keywords" content="<%- config.keywords %>"><% } %>
+    <% if(config.comments.show && config.comments.moderation && config.comments.fb_user_id) { %>
+        <meta property="fb:admins" content="<%- config.comments.fb_user_id %>"/> <% } %> 
     <% if(theme.rss) { %>
         <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml"><% } %>
 

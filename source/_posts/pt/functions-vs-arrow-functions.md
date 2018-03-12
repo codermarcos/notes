@@ -10,7 +10,7 @@ categories:
 
 ## Entendendo melhor
 
-A [Arrow-Funciton](http://www.ecma-international.org/ecma-262/6.0/#sec-arrow-function-definitions) incluida na [es6](http://frontend-weekly.codermarcos.com/pt/javascript/mudancas-da-es5-para-a-es6/) não é apenas uma sugar syntax de [Function](https://www.ecma-international.org/ecma-262/6.0/#sec-function-definitions) as duas sintax tem suas peculiaridades abaixo listei algumas delas:
+A [Arrow-Funciton](http://www.ecma-international.org/ecma-262/6.0/#sec-arrow-function-definitions) incluida na [es6](http://frontend-weekly.codermarcos.com/pt/javascript/mudancas-da-es5-para-a-es6/) não é apenas uma sugar syntax de [Function](https://www.ecma-international.org/ecma-262/6.0/#sec-function-definitions) as duas sintaxes tem suas peculiaridades, abaixo listei algumas delas:
 
 * [Hoisting]() Usando uma função não nomeada "anonymous-function" ela não é hoisted, como arrow functions são apenas anonimas ou seja só podem ser atribuidas a uma variavel não é possivel usalas antes de sua declaração. Segue exemplo:
 

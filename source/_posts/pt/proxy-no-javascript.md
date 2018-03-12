@@ -178,4 +178,8 @@ Não é muito interessante para executar ações simples. Mas pode se tornar mui
 
 
 ## Suporte 
-Seu suporte jas esta em **87,66%** segundo o [can i use](https://caniuse.com/#feat=proxy) então pode usar tranquilo. 
+Seu suporte jas esta em **87,66%** segundo o [can i use](https://caniuse.com/#feat=proxy) então pode usar tranquilo. Claro que se estiver usando um transpilador como [Babel](https://babeljs.io/) não precisa nem se preucupar com isso.
+
+## Conclusão 
+
+É sempre bom sair do "arroz e feião" do javascript conhecer novos objetos, funções e caracteristicas que facilitam ou até mesmo ajudam a limpar nosso codigo. Nesse caso acho que o **Proxy** em grande parte veio para limpar nosso codigo e deixa-lo mais legivel e reutilizavel.

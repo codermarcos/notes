@@ -2,17 +2,14 @@ window.app = () => {
   let scrollY = 0;
   let header = document.getElementsByClassName('navbar')[0];
 
-  document.querySelectorAll('a[device-link]').forEach(element => {
-    const devices = JSON.parse(element.getAttribute('href'));
+  document.querySelectorAll('a[whatsapp-link]').forEach(element => {
+    const url = new URL(element.getAttribute('href'));
     if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent
       )
-    ) {
-      element.href = devices.mobile;
-    } else {
-      element.href = devices.desktop;
-    }
+    ) return;
+    element.href = `whatsapp://send?text=${url.searchParams.get('text')}`;
   });
   
   if (!header) return;

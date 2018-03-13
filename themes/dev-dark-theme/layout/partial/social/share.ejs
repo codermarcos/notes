@@ -3,18 +3,18 @@
 <address class="social-icons">
     <% if (whatsapp) { %>
     <a 
-        device-link
+        whatsapp-link
         class="icon" 
         target="_blank" 
         data-action="share/whatsapp/share"
         title="<%= __('shareon') %> whatsapp" 
-        href='{ "mobile": "whatsapp://send?text=<%- whatsapp.message %>", "desktop": "https://web.whatsapp.com/send?text=<%- whatsapp.message %>" }'>
+        href="https://web.whatsapp.com/send?text=<%- whatsapp.message %>"
         <svg class="icon__svg">
             <use xlink:href="#whatsapp">
         </svg>
     </a>
     <% } %>
-
+    
     <% if (facebook) { %>
     <a 
         class="icon" 

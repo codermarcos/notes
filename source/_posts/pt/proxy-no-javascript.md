@@ -11,7 +11,9 @@ categories:
 ## Oque é proxy
 
 O **Proxy** normalmente é um intermediário para ações entre o usuário e seu servidor. Mas no javascript o [Proxy](https://www.ecma-international.org/ecma-262/6.0/#sec-proxy-objects) é um objeto usado para criar um comportamento customizado para um objeto, definir ações para determinado comportamento.
-<br>
+<p align="center">
+    <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/proxy-no-javascript/proxy.png" alt="Criar objeto pessoa">
+</p>
 
 ### Uso simples
 

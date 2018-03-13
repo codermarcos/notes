@@ -3,6 +3,13 @@ title: Descobrindo o Symbol
 lang: pt
 date: 2017-12-04 22:10:04
 description: Descobrindo oque é o symbol a es6 e como utiliza-lo.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, ECMAScript, Mudancas da es5 para a es6, es6]
 categories: 
 - Javascript

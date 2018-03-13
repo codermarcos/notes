@@ -3,6 +3,13 @@ title: Conhecendo os recursos do xhr
 lang: pt
 date: 2017-11-21 14:07:04
 description: Conheçendo recursos do XMLHttpRequest mais conhecido como XHR.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, Comparadores]
 categories: 
 - Javascript

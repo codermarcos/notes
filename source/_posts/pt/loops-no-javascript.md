@@ -3,6 +3,13 @@ title: Loops no Javascript
 lang: pt
 date: 2017-10-21 02:58:04
 description: Conhecendo melhor os laços de repetição do Javascript e suas diferentes utilidades.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, Loops]
 categories: 
 - Javascript

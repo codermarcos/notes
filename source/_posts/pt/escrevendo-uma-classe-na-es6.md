@@ -3,6 +3,13 @@ title: Escrevendo uma classe na es6
 lang: pt
 date: 2017-08-27 22:57:04
 description: Nova sintax de classes na es6.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, ECMAScript, Mudancas da es5 para a es6, es6]
 categories: 
 - Javascript

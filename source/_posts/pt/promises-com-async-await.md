@@ -3,6 +3,13 @@ title: Promises com Async Await
 lang: pt
 date: 2017-08-27 22:57:08
 description: Diferentes formas de usar promises ou async/await na pratica.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, ECMAScript, Promises]
 categories: 
 - Javascript

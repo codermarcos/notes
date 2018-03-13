@@ -3,6 +3,13 @@ title: Array na es6
 lang: pt
 date: 2017-08-30 00:00:01
 description: Novos prototypes da classe Array que foram implementados na es6.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, ECMAScript, Mudancas da es5 para a es6, es6]
 categories: 
 - Javascript

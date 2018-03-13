@@ -2,7 +2,14 @@
 title: Novidades da es8
 lang: pt
 date: 2017-09-12 23:45:05
-description: Descobrindo as novas features da es8
+description: Descobrindo as novas features da es8.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, ECMAScript, es8]
 categories: 
 - Javascript

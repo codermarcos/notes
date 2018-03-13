@@ -2,6 +2,13 @@
 title: Copiar objetos no javascript
 lang: pt
 description: Aprendendo as diferentes maneiras de copiar no javascript
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags:
   - Javascript
   - Object

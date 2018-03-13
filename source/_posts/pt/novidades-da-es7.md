@@ -3,6 +3,13 @@ title: Novidades da es7
 lang: pt
 date: 2017-09-02 03:53:05
 description: Descobrindo as novas features da es7.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, ECMAScript, es7]
 categories: 
 - Javascript

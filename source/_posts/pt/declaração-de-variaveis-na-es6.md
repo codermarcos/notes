@@ -3,6 +3,13 @@ title: Declaração de variaveis na es6
 lang: pt
 date: 2017-09-06 14:42:04
 description: Novas formas de declarar variaveis na es6.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, ECMAScript, Mudancas da es5 para a es6, es6]
 categories: 
 - Javascript

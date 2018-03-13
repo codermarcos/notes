@@ -3,6 +3,13 @@ title: Oque é o spread
 lang: pt
 date: 2017-09-06 14:42:04
 description: Nova feature da es6 o spread oque é? e como usa-lo?.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, ECMAScript, Mudancas da es5 para a es6, es6]
 categories: 
 - Javascript

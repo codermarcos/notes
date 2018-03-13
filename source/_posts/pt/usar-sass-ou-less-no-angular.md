@@ -2,7 +2,14 @@
 title: Usar sass ou less no angular
 lang: pt
 date: 2018-03-03 11:55:34
-description: Alguns problemas que é possivel encontrar usando pre-compiladores e como resolve-los
+description: Alguns problemas que é possivel encontrar usando pre-compiladores e como resolve-los.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Frameworks, Angular, Scss, Less]
 categories:
 - Frameworks

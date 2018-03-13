@@ -10,7 +10,12 @@ charset: utf-8
 robots: index, follow
 keywords: Frontend-Weekly, FrontendWeekly, Frontend Weekly, Frontend, Weekly, Javascript, HTML, CSS
 content: Um pouco sobre que aprendi ou estou aprendendo sobre frontend e boas praticas.
-author: codermarcos
+author: 
+  name: codermarcos
+  photo: https://avatars3.githubusercontent.com/u/12430365?s=460&v=4
+  email: coder.marcos@gmail.com
+  phone: 5511971353293
+  job: Frontend
 
 # Locale
 language: pt

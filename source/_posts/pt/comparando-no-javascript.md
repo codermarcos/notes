@@ -3,6 +3,13 @@ title: Comparando no Javascript
 lang: pt
 date: 2017-09-16 23:43:04
 description: Aprendendo a escolher quais operadores e suas diferenças e qunado usar para qual tipo de comparação.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, Comparadores]
 categories: 
 - Javascript

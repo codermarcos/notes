@@ -3,6 +3,13 @@ title: Acessando midias
 lang: pt
 date: 2017-09-30 19:27:05
 description: Acessar os dispositivos de midia input e output do browser.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, Midias]
 categories: 
 - Javascript

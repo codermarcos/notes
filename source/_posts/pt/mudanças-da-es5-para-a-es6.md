@@ -3,6 +3,13 @@ title: Mudanças da es5 para a es6
 lang: pt
 date: 2017-08-27 13:42:08
 description: Descobrindo as mudaças da es5 para a es6 e suas novidades.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, ECMAScript, Mudanças da es5 para a es6, es6]
 categories: 
 - Javascript

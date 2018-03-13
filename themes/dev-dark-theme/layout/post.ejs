@@ -6,3 +6,11 @@
         <%- page.content %></div>
     <%- partial('partial/post/footer') %>
 </main>
+<%- partial('partial/seo/structured-data', { 
+    title: page.title, 
+    updated: page.updated, 
+    author: page.author, 
+    contribuitor: page.contribuitor, 
+    published: page.date, 
+    description: page.description, 
+}) %>

@@ -1,0 +1,27 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://google.com/article"
+  },
+  "headline": "<%- title %>",
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "datePublished": "<%- published %>",
+  "dateModified": "<%- updated %>",
+  "author": {
+    "@type": "Person",
+    "name": "<%- author.name %>"
+    "email": "mailto:<%- author.email %>",
+    "image": "<%- author.photo %>",
+    "telephone": "<%- author.phone %>",
+    "jobTitle": "<%- author.job %>",
+  },
+  "description": "<%- description %>"
+}
+</script>

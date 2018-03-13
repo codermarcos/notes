@@ -3,6 +3,13 @@ title: Novos String.prototypes es6
 lang: pt
 date: 2017-08-27 22:57:08
 description: Diferentes formas de usar promises ou async/await na pratica.
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, ECMAScript, Mudancas da es5 para a es6, es6]
 categories: 
 - Javascript

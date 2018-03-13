@@ -3,6 +3,13 @@ title: O estranho NaN
 lang: pt
 date: 2018-02-05 09:35:45
 description: Entendendo este caso estranho de NaN ou "Not a Number".
+author: 
+    job:
+    name: 
+    link: 
+    photo:
+    email: 
+    phone:
 tags: [Javascript, NaN, Numbers]
 categories:
 - Javascript

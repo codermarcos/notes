@@ -10,17 +10,17 @@ categories:
 
 ## Oque é proxy
 
-O **Proxy** normalmente é um intermediário para ações entre o usuário e seu servidor. Mas no javascript o [Proxy](https://www.ecma-international.org/ecma-262/6.0/#sec-proxy-objects) é um objeto usado para criar um comportamento customizado para um objeto, definir ações para determinado comportamento.
+O **Proxy** normalmente é um intermediário para ações entre o usuário e seu servidor. Mas no javascript o [Proxy](https://www.ecma-international.org/ecma-262/6.0/#sec-proxy-objects) é usado para criar um comportamento customizado para um objeto, como definir ações para determinado comportamento.
 <p align="center">
     <img width="100%" src="https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/proxy-no-javascript/proxy.png" alt="Criar objeto pessoa">
 </p>
 
 ### Uso simples
 
-Seu uso é bem simples precisa apenas de um target que é um objeto e um handler que definira o comportamento customizado:
+Seu uso é bem simples, precisa apenas de um target (que é um objeto) e um handler que definirá o comportamento customizado:
 
 ```javascript
-var proxy = new Proxy(target, handler); 
+var proxy = new Proxy(target, handler);
 ```
 <br>
 
@@ -33,24 +33,24 @@ var pessoa = {
 };
 ```
 
-E o comportamento customizado sera usando a trap (armadilha) no **set** ou seja quando alguem definir um novo valor para qualquer propriedade do objeto ele que ira interceptar esta ação.
+E o comportamento customizado será usando a trap (armadilha) no **set**, ou seja, quando alguem definir um novo valor para qualquer propriedade do objeto ele que irá interceptar esta ação.
 ```javascript
 var handler = {
   set(target, key, value, receiver) {
     console.log(`A propriendade "${key}" esta recebedo "${value}"`);
     console.log(target);    // target é o objeto original
-    console.log(key);       // key é o nome da prop que esta sendo alterada
-    console.log(value);     // value é o novo valor que esta sendo definido
-    console.log(receiver);  // receiver é como o proxy estara apos o disparo da armadilha
+    console.log(key);       // key é o nome da prop alterada
+    console.log(value);     // value é o novo valor definido
+    console.log(receiver);  // receiver é como o proxy estará após o disparo da armadilha
 
     target[key] = value; // para alterar o objeto original
   }
 };
 ```
 
-Agora que esta definido o target e o handler basta apenas instanciar o objeto Proxy
+Agora que o target e o handler estão definidos, basta apenas instanciar o objeto Proxy
 ```javascript
-var proxy = new Proxy(pessoa, handler); 
+var proxy = new Proxy(pessoa, handler);
 // Proxy {​
 //  < target > : { idade: 19​​, nome: "Marcos"​,​ __proto__: Object {…} }
 //  < handler > : { set: function set(), __proto__: Object {…} }
@@ -62,14 +62,14 @@ Então quando **alterar** alguma **propriedade do proxy** nosso comportamento cu
 proxy.nome = 'Marcos Junior';
 // A propriendade "nome" esta recebedo "Marcos Junior"
 // Object { nome: "Marcos", idade: 19 }
-// "nome" 
+// "nome"
 // "Marcos Junior"
 ```
-## Tipos de traps (Armadinhas)
+## Tipos de traps (Armadilhas)
 
-Traps nada mais são que os tipos de armadilhas que pode ter dentro de um handler ou seja qual ação vai disparar o proxy. Listei abaixo as que acho mais uteis:
+Traps nada mais são que os tipos de armadilhas que pode ter dentro de um handler, ou seja, qual ação vai disparar o proxy. Listei abaixo as que acho mais uteis:
 
-##### get
+##### set
 Como visto acima o set é disparado quando alguem define um novo valor para uma propriedade.
 
 ```javascript
@@ -81,13 +81,13 @@ var proxy = new Proxy(pessoa, {
   set(target, key, value, receiver) {
     target[key] = value.toUpperCase();
   }
-}); 
+});
 
 proxy.nome = 'Junior';
 
 console.log(pessoa); // Object { nome: "JUNIOR" }
 ```
-> Observação se não atribuir o value ao objeto target ele não atualizara o valor
+> Observação se não atribuir o value ao objeto target ele não atualizará o valor
 <br>
 
 ##### get
@@ -102,14 +102,14 @@ var proxy = new Proxy(pessoa, {
   get(target, key) {
     return `O valor solicitado é ${target[key]}`;
   }
-}); 
+});
 
 console.log(proxy.nome); // O valor solicitado é Marcos
 ```
 <br>
 
 ##### has
-Has muito parecido com get porem dispara quando é verificado se existe aquela propriedade naquele objeto.
+Has é muito parecido com get, porém dispara quando é verificado se existe aquela propriedade naquele objeto.
 
 ```javascript
 var pessoa = {
@@ -118,19 +118,19 @@ var pessoa = {
 
 var proxy = new Proxy(pessoa, {
   has(target, key) {
-    // Negaremos a saida para afetar o resultado
+    // Negaremos a saída para afetar o resultado
     return !(key in target);
   }
-}); 
+});
 
-// Ele retornara false mesmo existindo nome em proxy
+// Ele retornará false mesmo existindo nome em proxy
 console.log('nome' in proxy); // false
 ```
 <br>
 
 #### deleteProperty
 
-deleteProperty por sua tradução ja diz tudo "excluir propriedade", é exatamente assim que essa armadilha é disparada, toda vez que alguem tentar excluir uma propriedade.
+deleteProperty por sua tradução já diz tudo "excluir propriedade", é exatamente assim que essa armadilha é disparada, toda vez que alguem tentar excluir uma propriedade.
 
 ```javascript
 var pessoa = {
@@ -142,7 +142,7 @@ var proxy = new Proxy(pessoa, {
     console.log(`Deletando ${key}`);
     delete target[key]
   }
-}); 
+});
 
 delete proxy.nome; // Deletando nome
 ```
@@ -162,7 +162,7 @@ var proxy = new Proxy(pessoa, {
     console.log(descriptors);
     return target;
   }
-}); 
+});
 
 proxy.idade = 19; // Criando uma nova propriedade chamada idade com valor 19
                              // Object { value: 19, writable: true, enumerable: true, configurable: true }
@@ -170,18 +170,18 @@ proxy.idade = 19; // Criando uma nova propriedade chamada idade com valor 19
 
 ## Uso real
 
-Não é muito interessante para executar ações simples. Mas pode se tornar muito interessante e util para deixar o codigo mais limpo e reutilizavel. Alguns exemplos são:
+Não é muito interessante para executar ações simples. Mas pode se tornar muito interessante e util para deixar o código mais limpo e reutilizável. Alguns exemplos são:
 
 * Validações
-* Correção de variaveis
-* Implementar ações no DOM 
-* Restringir acesso a valores 
+* Correção de variáveis
+* Implementar ações no DOM
+* Restringir acesso a valores
 * Extender objetos nativos do javascript.
 
 
-## Suporte 
-Seu suporte jas esta em **87,66%** segundo o [can i use](https://caniuse.com/#feat=proxy) então pode usar tranquilo. Claro que se estiver usando um transpilador como [Babel](https://babeljs.io/) não precisa nem se preucupar com isso.
+## Suporte
+Seu suporte já esta em **87,66%** segundo o [can i use](https://caniuse.com/#feat=proxy) então pode usar tranquilo. Claro que se estiver usando um transpilador como [Babel](https://babeljs.io/) não precisa nem se preucupar com isso.
 
-## Conclusão 
+## Conclusão
 
-É sempre bom sair do "arroz e feião" do javascript conhecer novos objetos, funções e caracteristicas que facilitam ou até mesmo ajudam a limpar nosso codigo. Nesse caso acho que o **Proxy** em grande parte veio para limpar nosso codigo e deixa-lo mais legivel e reutilizavel. Como [Addy Osmani](https://developers.google.com/web/resources/contributors/addyosmani) disse  "Embora estejamos despedindo de **Object.observe()** agora é possível temos um possivel polyfill usando o Proxie"
+É sempre bom sair do "arroz e feião" do javascript conhecer novos objetos, funções e caracteristicas que facilitam ou até mesmo ajudam a limpar nosso código. Nesse caso acho que o **Proxy** em grande parte veio para limpar nosso código e deixa-lo mais legível e reutilizavel. Como [Addy Osmani](https://developers.google.com/web/resources/contributors/addyosmani) disse  "Embora estejamos despedindo de **Object.observe()** agora é possível termos um possivel polyfill usando o Proxie"

@@ -23,7 +23,7 @@ date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
 # Show comments
-## Docs: https://developers.facebook.com/tools/comments/
+## Docs: https://disqus.com/admin/create/
 comments:
   show: true
   script_discus: https://frontend-weekly.disqus.com/embed.js

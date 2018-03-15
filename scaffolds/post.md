@@ -2,6 +2,8 @@
 title: {{ title }}
 lang:
 date: {{ date }}
+updated: {{ date }}
+photo:
 description: 
 author: 
     job:

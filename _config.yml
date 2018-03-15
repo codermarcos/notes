@@ -26,8 +26,7 @@ time_format: HH:mm:ss
 ## Docs: https://developers.facebook.com/tools/comments/
 comments:
   show: true
-  moderation: true
-  fb_user_id: 100014732220660
+  script_discus: https://frontend-weekly.disqus.com/embed.js
   
 # RSS
 feed:

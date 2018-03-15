@@ -2,7 +2,7 @@
 <script>
 (function() {
 var d = document, s = d.createElement('script');
-s.src = 'https://frontend-weekly.disqus.com/embed.js';
+s.src = '<%- config.comments.script_discus %>';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();

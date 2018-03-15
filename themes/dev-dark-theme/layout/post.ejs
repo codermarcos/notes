@@ -1,8 +1,7 @@
 <%- partial('partial/post/header') %>
 <main class="main-content">
     <div 
-        class="main-content__container markdown" 
-        itemprop="articleBody">
+        class="main-content__container markdown">
         <%- page.content %></div>
     <%- partial('partial/post/footer') %>
 </main>
@@ -10,6 +9,7 @@
     title: page.title, 
     updated: page.updated, 
     author: page.author, 
+    photo: page.photo,
     contribuitor: page.contribuitor, 
     published: page.date, 
     description: page.description, 

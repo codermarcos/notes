@@ -2,14 +2,15 @@
 title: Mudanças da es5 para a es6
 lang: pt
 date: 2017-08-27 13:42:08
+photo:
 description: Descobrindo as mudaças da es5 para a es6 e suas novidades.
 author: 
-    job:
-    name: 
-    link: 
-    photo:
-    email: 
-    phone:
+    job: Frontend
+    name: Marcos Junior 
+    link: https://www.linkedin.com/in/codermarcos/ 
+    photo: https://s.gravatar.com/avatar/5ccddd4e7cf7a5266ac229a691cabb5a?s=80
+    email: coder.marcos@gmail.com 
+    phone: 11 971353293
 tags: [Javascript, ECMAScript, Mudanças da es5 para a es6, es6]
 categories: 
 - Javascript

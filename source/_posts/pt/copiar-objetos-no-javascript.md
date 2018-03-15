@@ -1,20 +1,19 @@
 ---
 title: Copiar objetos no javascript
 lang: pt
+date: 2018-02-28 18:14:29
+photo: https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/copiar-objetos-no-javascript/create-pessoa.png
 description: Aprendendo as diferentes maneiras de copiar no javascript
 author: 
-    job:
-    name: 
-    link: 
-    photo:
-    email: 
-    phone:
-tags:
-  - Javascript
-  - Object
+    job: Frontend
+    name: Marcos Junior 
+    link: https://www.linkedin.com/in/codermarcos/ 
+    photo: https://s.gravatar.com/avatar/5ccddd4e7cf7a5266ac229a691cabb5a?s=80
+    email: coder.marcos@gmail.com 
+    phone: 11 971353293
+tags: [Javascript, Object]
 categories:
   - Javascript
-date: 2018-02-28 18:14:29
 ---
 
 
@@ -30,7 +29,7 @@ Primeiro criamos um objeto na memoria
 var pessoa = {
   nome: 'Marcos',
   contatos: {
-    email: 'coder.marcos@gmail.com'
+    email: coder.marcos@gmail.com 'coder.marcos@gmail.com'
   }
 };
 ```
@@ -63,7 +62,7 @@ pessoa.idade = 19;
 console.log(clone);
 // Object {
 //      contatos: Object {
-//          email: "coder.marcos@gmail.com"
+//          email: coder.marcos@gmail.com "coder.marcos@gmail.com"
 //      },
 //      idade: 19,
 //      nome: "Marcos"
@@ -153,7 +152,7 @@ pessoa.idade = 19;
 console.log(clone);
 // Object {
 //      contatos: Object {
-//          email: "coder.marcos@gmail.com"
+//          email: coder.marcos@gmail.com "coder.marcos@gmail.com"
 //      },
 //      nome: "Marcos"
 // }
@@ -177,7 +176,7 @@ pessoa.contatos.github = 'codermarcos';
 console.log(clone);
 // Object {
 //      contatos: Object {
-//          email: "coder.marcos@gmail.com",
+//          email: coder.marcos@gmail.com "coder.marcos@gmail.com",
 //          github: "codermarcos"
 //      },
 //      nome: "Marcos"
@@ -233,14 +232,14 @@ console.log(clone); // Object { nome: "Marcos" }
 Se estiver usando um **objeto que contenha outros objetos simples** você pode usar desta forma
 
 ```javascript
-var pessoa = { nome: 'Marcos', contatos: { email: 'coder.marcos@gmail.com' } };
+var pessoa = { nome: 'Marcos', contatos: { email: coder.marcos@gmail.com 'coder.marcos@gmail.com' } };
 
 var clone = JSON.parse(JSON.stringify(pessoa));
 
 pessoa.idade = 19;
 pessoa.contatos.github = 'codermarcos';
 
-console.log(clone); // Object { nome: "Marcos", contatos: { email: "coder.marcos@gmail.com" } }
+console.log(clone); // Object { nome: "Marcos", contatos: { email: coder.marcos@gmail.com "coder.marcos@gmail.com" } }
 ```
 
 Assim ele tranforma seu objeto em um valor primitivo criando um novo espaço na memória e então apartir deste valor ele cria um novo objeto.
@@ -254,7 +253,7 @@ Uma forma mais flexível é criar uma função de deep copy
 var pessoa = { 
     nome: 'Marcos', 
     contatos: { 
-        email: 'coder.marcos@gmail.com' 
+        email: coder.marcos@gmail.com 'coder.marcos@gmail.com' 
     },
     hello: () => console.log('Hello')
 };

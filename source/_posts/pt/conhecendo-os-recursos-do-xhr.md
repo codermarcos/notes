@@ -2,14 +2,15 @@
 title: Conhecendo os recursos do xhr
 lang: pt
 date: 2017-11-21 14:07:04
+photo:
 description: Conheçendo recursos do XMLHttpRequest mais conhecido como XHR.
 author: 
-    job:
-    name: 
-    link: 
-    photo:
-    email: 
-    phone:
+    job: Frontend
+    name: Marcos Junior 
+    link: https://www.linkedin.com/in/codermarcos/ 
+    photo: https://s.gravatar.com/avatar/5ccddd4e7cf7a5266ac229a691cabb5a?s=80
+    email: coder.marcos@gmail.com 
+    phone: 11 971353293
 tags: [Javascript, Comparadores]
 categories: 
 - Javascript

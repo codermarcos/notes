@@ -2,7 +2,15 @@
 title: Proxy no javascript
 lang: pt
 date: 2018-03-10 21:15:00
-description:
+photo: https://raw.githubusercontent.com/codermarcos/frontend-weekly/assets/javascript/proxy-no-javascript/proxy.png
+description: Como usar o proxy, para que serve. 
+author: 
+    job: Frontend
+    name: Marcos Junior 
+    link: https://www.linkedin.com/in/codermarcos/ 
+    photo: https://s.gravatar.com/avatar/5ccddd4e7cf7a5266ac229a691cabb5a?s=80
+    email: coder.marcos@gmail.com 
+    phone: 11 971353293
 tags: [Javascript, es6, ECMAScript, Mudancas da es5 para a es6]
 categories:
 - Javascript
@@ -184,4 +192,4 @@ Seu suporte já esta em **87,66%** segundo o [can i use](https://caniuse.com/#fe
 
 ## Conclusão
 
-É sempre bom sair do "arroz e feião" do javascript conhecer novos objetos, funções e caracteristicas que facilitam ou até mesmo ajudam a limpar nosso código. Nesse caso acho que o **Proxy** em grande parte veio para limpar nosso código e deixa-lo mais legível e reutilizavel. Como [Addy Osmani](https://developers.google.com/web/resources/contributors/addyosmani) disse  "Embora estejamos despedindo de **Object.observe()** agora é possível termos um possivel polyfill usando o Proxie"
+É sempre bom sair do "arroz e feijão" do javascript conhecer novos objetos, funções e caracteristicas que facilitam ou até mesmo ajudam a limpar nosso código. Nesse caso acho que o **Proxy** em grande parte veio para limpar nosso código e deixa-lo mais legível e reutilizavel. Como [Addy Osmani](https://developers.google.com/web/resources/contributors/addyosmani) disse  "Embora estejamos despedindo de **Object.observe()** agora é possível termos um possivel polyfill usando o Proxie"

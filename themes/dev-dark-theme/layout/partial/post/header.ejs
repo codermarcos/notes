@@ -2,28 +2,18 @@
 <header class="main-header">
     <div class="main-header__background"></div>
     <div class="main-header__container">        
-        <a 
-        class="categories__category <%- url_data(page.categories) %>" 
-        href="/categories/<%- url_data(page.categories) %>"><%- first_data(page.categories) %></a><br><br><br>
-        
-        <h1 class="main-header__title" itemprop="name">
+        <h1 class="main-header__title">
             <%- page.title %></h1>
-
-        <p class="main-header__description">
-            <%- page.description %></p>
+            
         <p class="main-header__container__description">
-            <span>Postado por <%- page.author.name %> em
-                <time 
-                    class="description__day" 
-                    datetime="<%- date(page.date, 'YYYY-MM-DD') %>" 
-                    title="<%= __('published') %> <%- date(page.date, 'D MMM YYYY') %>"
-                    itemprop="datePublished"><%- full_date(page.date, 'DD MMM YY HH[h] m[m]') %></time>
-            </span>
-
             <a 
                 class="description__category" 
                 href="/categories/<%- url_data(page.categories) %>"
                 tilte="<%= __('category') %>"><%- first_data(page.categories) %></a>
+            <time 
+                class="description__day" 
+                datetime="<%- date(page.date, 'YYYY-MM-DD') %>" 
+                title="<%= __('published') %> <%- date(page.date, 'D MMM YYYY') %>"><%- full_date(page.date, 'DD MMM YY HH[h] m[m]') %></time>
         </p>
     </div>
 </header>

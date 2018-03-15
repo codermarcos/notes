@@ -2,14 +2,15 @@
 title: Como usar datalist
 lang: pt
 date: 2018-01-13 16:36:56
+photo:
 description: Oque é o datalist e alguns cases para usalo.
 author: 
-    job:
-    name: 
-    link: 
-    photo:
-    email: 
-    phone:
+    job: Frontend
+    name: Marcos Junior 
+    link: https://www.linkedin.com/in/codermarcos/ 
+    photo: https://s.gravatar.com/avatar/5ccddd4e7cf7a5266ac229a691cabb5a?s=80
+    email: coder.marcos@gmail.com 
+    phone: 11 971353293
 tags: [Html, Html5, Input, Tags]
 categories:
 - Html

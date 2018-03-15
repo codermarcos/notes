@@ -2,14 +2,15 @@
 title: Novidades da es8
 lang: pt
 date: 2017-09-12 23:45:05
+photo:
 description: Descobrindo as novas features da es8.
 author: 
-    job:
-    name: 
-    link: 
-    photo:
-    email: 
-    phone:
+    job: Frontend
+    name: Marcos Junior 
+    link: https://www.linkedin.com/in/codermarcos/ 
+    photo: https://s.gravatar.com/avatar/5ccddd4e7cf7a5266ac229a691cabb5a?s=80
+    email: coder.marcos@gmail.com 
+    phone: 11 971353293
 tags: [Javascript, ECMAScript, es8]
 categories: 
 - Javascript

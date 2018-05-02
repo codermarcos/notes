@@ -1,6 +1,0 @@
-User-agent: *
-
-Sitemap: http://frontend-weekly.codermarcos.com/sitemap.xml 
-Sitemap: http://frontend-weekly.codermarcos.com/tag-sitemap.xml
-Sitemap: http://frontend-weekly.codermarcos.com/post-sitemap.xml
-Sitemap: http://frontend-weekly.codermarcos.com/category-sitemap.xml

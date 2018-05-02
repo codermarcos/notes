@@ -1,12 +1,11 @@
-# Frontend weekly
+# Frontend Quest
+
 Aprendizado semanal sobre temas de frontend e boas praticas. 
 
-[frontend-weekly.codermarcos.com](http://frontend-weekly.codermarcos.com/)
+[Posts sobre Frameworks](frameworks)
 
-[Ultimos posts](http://frontend-weekly.codermarcos.com/)
+[Posts sobre Javascript](js)
 
-[Posts sobre Javascript](http://frontend-weekly.codermarcos.com/categories/javascript)
+[Posts sobre HTML](html)
 
-[Posts sobre HTML](http://frontend-weekly.codermarcos.com/categories/html)
-
-[Posts sobre CSS](http://frontend-weekly.codermarcos.com/categories/css)
+[Posts sobre CSS](css)
